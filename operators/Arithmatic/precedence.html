@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>precedence</title>
+</head>
+<body>
+     <p id="demo1"></p>
+     <p id="demo2"></p>
+     <script>
+          let x = 100 + 50* 3; //here Multiplication is a higher order so first make Multiplication 
+          document.getElementById("demo1").innerHTML = x; 
+          let y =(100 + 50) *3;
+          document.getElementById("demo2").innerHTML = y; // parentheses are use to seperate precedence.
+     </script>
+</body>
+</html>

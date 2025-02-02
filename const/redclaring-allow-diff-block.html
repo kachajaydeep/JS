@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Redeclare-const-in-Different-Blocks</title>
+</head>
+
+<body>
+     <p>you can redeclare const variable in different block like a let keyword.</p>
+     <p id="demo"></p>
+     <script>
+          const x = 10;
+          {
+               const x = 20;
+          }
+          {
+               const x = 30;
+          }
+          document.getElementById("demo").innerHTML= x;
+     </script>
+</body>
+
+</html>
