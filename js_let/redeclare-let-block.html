@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>redeclare-let-block</title>
+</head>
+
+<body>
+     <p>Redeclare a let variable must use in JS because it's not cause to arrise a problem.</p>
+     <p id="demo1"></p>
+     <p id="demo2"></p>
+
+     <script>
+          let x = 10;
+          {
+               let x = 30;
+               document.getElementById("demo2").innerHTML = x; //it is used inside block so it's called blockscope
+          }
+          document.getElementById("demo1").innerHTML = x;
+
+     </script>
+</body>
+
+</html>

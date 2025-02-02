@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Redeclare let variable in same block</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+     <script>
+          var x = 2;
+          var x = 3;
+          {
+               /* let x = 2;
+               let x = 3; // don't */
+          }
+          {
+               let x = 2; //allow
+               var x = 5; //don't allow
+          }
+          document.getElementById("demo").innerHTML = x;
+     </script>
+</body>
+
+</html>
