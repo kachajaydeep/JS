@@ -7,10 +7,12 @@
 body{
    min-height: 100vh;
    min-width: 100vw;
-   background: url('./leaf.jpg') no-repeat center center;
+   background: url('./leaf.jpg') no-repeat center center fixed;
    background-size: cover;
 }
-
+::-webkit-scrollbar{
+   overflow: scroll;
+}
 .container {
    width: 100%;
    display: flex;
@@ -29,6 +31,7 @@ body{
    display: flex;
    gap: 20px;
    flex-wrap: wrap;
+   justify-content: center;
 }
 a {
    text-decoration: none;

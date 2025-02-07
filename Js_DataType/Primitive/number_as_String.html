@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Number_As_String</title>
+</head>
+<body>
+     <p id="demo"></p>
+     <p class="demo"></p>
+     <p id="demo1"></p>
+     <script>
+          let x = "volvo" + 16;
+          let y = 19 + "farari";
+          document.getElementById("demo").innerHTML = x;
+
+          const cars = document.getElementsByClassName("demo"); 
+          cars[0].innerHTML = y;
+     </script>
+</body>
+</html>
