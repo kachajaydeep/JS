@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>undeclare_value</title>
+</head>
+<body>
+     <b>Not That the OR operator takes both Value undefine and null.</b> <br>
+     <b>But nullidh operator not take both Value </b>
+     <div id="demo"></div>
+     <div id="demo1"></div>
+     <div id="demo2"></div>
+     <div id="demo3"></div>
+     <script>
+          let unDefineValue;
+          let Null = "";
+          document.getElementById("demo2").innerHTML = Null || "hello";
+          document.getElementById("demo3").innerHTML = unDefineValue || "hello";
+          // document.getElementById("demo1").innerHTML = Null ?? "hello";
+          // document.getElementById("demo").innerHTML = undefineValue ?? "hello";
+     </script>
+</body>
+</html>
