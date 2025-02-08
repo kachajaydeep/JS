@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>use_nullish_collesing</title>
+</head>
+<body>
+     <p>Note that if the lefthand side value becomes null than nullish operator takes righthand side value.</p>
+     <p>If It's not null than take a lefthand side value.</p>
+     <div id="demo"></div>
+     <div id="demo1"></div>
+     <script>
+          const foo = null ?? "default String.";
+          const baz = 0 ?? 42;
+          document.getElementById("demo").innerHTML = "It's take a Righthand side value: " + foo;
+          document.getElementById("demo1").innerHTML = "It's take a lefthandside value: "+ baz;
+     </script>
+</body>
+</html>

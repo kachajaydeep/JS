@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Nullish_Parenthisis</title>
+</head>
+<body>
+     <p>Possible with brackets to make OutPut with Or and nullish operator.</p>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+     <script>
+          //wrong statement
+          // const foo = null || undefined ?? 'default String';
+          // document.getElementById("demo").innerHTML= foo;
+
+          //Right StateMents
+          const foo = (null||undefined) ?? "foo value";
+          document.getElementById("demo").innerHTML = foo;
+     </script>
+</body>
+</html>
