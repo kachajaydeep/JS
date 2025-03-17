@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Js_Methods</title>
+</head>
+<body>
+     <p>Methods are Action That can be <b>Performed on Object</b></p>
+     <p>Methods are functions defination</p>
+     <p id="demo"></p>
+
+     <script>
+          const person = {
+               firstname:"John Doe",
+               Lastname: "SomeThing...",
+               age:30,
+               fullname: function() {
+                    return this.firstname + "  " + this.Lastname;
+               }
+          };
+
+          document.getElementById("demo").innerHTML = person.fullname();
+
+          //Object are Containers for Properties and Methods
+          //Property are Named Values.
+          //Methods are Function Stored as a Properties.
+          //Properties Canbe primitive values, Function, or even other objects.
+     </script>
+</body>
+</html>

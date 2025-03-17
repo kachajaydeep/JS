@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Standard built in object-Null</title>
+</head>
+<body>
+     <p id="demo"></p>
+     <b>The null value is Represents the intentional absence of  any object value.</b>
+     <script>
+          let x;
+          let y = "";
+          function getVowels(str) {
+               const m = str.match(/[aeiou]/gi);
+               if (m === null){
+                    return 0;
+               }
+               return m.length;
+          }
+          console.log(getVowels('sky'));
+          console.log(typeof(x));
+          console.log(typeof(y));
+          console.log(null === undefined);
+          console.log(null == undefined);
+          
+     </script>
+</body>
+</html>
