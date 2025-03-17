@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Example1</title>
+</head>
+
+<body>
+     <p>A Javasript Function is a block of code designed to perform a particular task.</p>
+     <p>A JavaScript Function is Executed When Somthing invokes it.</p>
+     <p id="demo"></p>
+     <script>
+          function myFunction(p1, p2) {
+               return p1 * p2;
+          }
+          let result = myFunction(4, 3); //arguments are value which is receive by function
+          //argument behave as a local variables.
+          document.getElementById("demo").innerHTML = result;  //function inside the code execute when somthing call the function.
+
+          
+          /*   * Function Invocation *
+          call by events(e.g When User Click The button)
+          call by the JavaScript Code.
+          automatically(means self invoked) */
+
+     </script>
+</body>
+
+</html>

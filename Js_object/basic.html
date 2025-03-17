@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>object-basic</title>
+</head>
+
+<body>
+     <h1 style="text-transform: uppercase; font-family: sans-serif;">object is a key value pairs also called name value pairs </h1>
+     <p>JavaScript also like Variables but variable store only one value when objects are store multiple values.</p>
+     <p>Object have consider two things one which Properties(like color,big,small,..etc) and Methods (Like
+          start,stop,breake,...etc).</p>
+     <p id="demo"></p>
+     <script>
+          const person = {
+               firstName: "John",
+               LastName: "abraham",
+               age: "26",
+               eyeColor:"red"
+          };
+          document.getElementById("demo").innerHTML = person.firstName + " " +person.LastName+ " is a " + person.age+ " Years Old with " + person.eyeColor;
+
+     </script>
+</body>
+
+</html>

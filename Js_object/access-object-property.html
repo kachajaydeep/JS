@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Access_Property</title>
+</head>
+
+<body>
+     <h1>Two Way to Access obj Property</h1>
+     <p id="demo"></p>
+
+     <script>
+          const person = {
+               firstName: "helllo",
+               lastName: "world",
+               full_name: "hello world "
+          };
+
+          document.getElementById("demo").innerHTML = person["full_name"] + person["lastName"];
+     </script>
+</body>
+
+</html>
