@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>innerhtml_vs_innerText</title>
+</head>
+
+<body>
+     <p><b>Note: InnerHTML</b>is Used when We wan't to change the HTML Elemenet where The <b>InnerTEXT</b> is used when
+          we wan't change only Html Text</p>
+
+          <div id="demo">
+               <p>Original content with <strong>bold</strong> text</p>
+          </div>
+
+          <button onclick="showInnerHTML()">Show innerHTML</button>
+          <button onclick="showInnerText()">Show innerText</button>
+          <button onclick="setInnerHTML()">set innerHTML</button>
+          <button onclick="setInnerText()">set innerText</button>
+
+          <div id="output" style="margin-top: 20px;padding: 10px;border: 1px solid black;"></div>
+
+
+          <script>
+               function showInnerHTML(){
+                    document.getElementById("output").textContent = "innerHTML:" + demo.innerHTML; 
+               }
+               function setInnerHTML(){
+                    document.getElementById("demo").innerHTML = "<h3>Changed with <em>innerHTML</em></h3>";
+               }
+               function showInnerText(){
+                    document.getElementById("output").textContent = "InnerText:" + demo.innerText;
+               }
+
+               function setInnerText(){
+                    document.getElementById("demo").innerText ="<h3>Changed with <em>innerText</em></h3>";
+               }
+          </script>
+</body>
+
+</html>
