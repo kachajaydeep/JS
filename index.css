@@ -7,7 +7,7 @@
 body{
    min-height: 100vh;
    min-width: 100vw;
-   background: url('./leaf.jpg') no-repeat center center fixed;
+   background: url('./programming-background-collage.jpg') no-repeat fixed;
    background-size: cover;
 }
 ::-webkit-scrollbar{
