@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Change the Property of The object.</title>
+</head>
+<body>
+     <p id="demo1"></p>
+     <p id="demo2"></p>
+     <p id="demo3"></p>
+
+     <script>
+          function myPer(ThisObject){
+               ThisObject.Name = "Denish";
+          }
+          const Person = {
+               Name: "hello123",
+               age: 23,
+               color: "Black",
+          };
+          document.getElementById("demo1").innerHTML = Person.Name
+          let change = myPer(Person);
+          document.getElementById("demo2").innerHTML = Person.Name;
+     </script>
+</body>
+</html>

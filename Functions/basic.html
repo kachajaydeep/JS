@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Basic_Function</title>
+</head>
+<body>
+     <!-- function is a block of code to perform perticular task. function is write code once and invoke whenever You Want -->
+      <p id="demo"></p>
+
+      <script>
+          function isEven(number){
+              return number % 2 === 0 ? true : false; //ternary operator
+          }
+          let x = isEven(2000);
+          document.getElementById("demo").innerHTML = x;
+      </script>
+</body>
+</html>

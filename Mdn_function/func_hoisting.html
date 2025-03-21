@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>func_hoisting</title>
+</head>
+<body>
+     <p>note that function is not hoisting.</p>
+     <p id="demo1"></p>
+     <script>
+          document.getElementById("demo1").innerHTML=Expression;
+
+          Expression();
+          var Expression = function (){
+               console.log("hello");
+          }
+     </script>
+</body>
+</html>

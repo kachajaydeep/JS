@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Change array Value</title>
+</head>
+<body>
+     <p id="demo1"></p>
+     <p id="demo2"></p>
+
+     <script>
+          function myFunc(array){
+               array[2] = 23;
+          }
+
+          const arr = [0,10,12,16];
+          document.getElementById("demo1").innerHTML =arr[2];
+          myFunc(arr);
+          document.getElementById("demo2").innerHTML = arr[2];
+     </script>
+</body>
+</html>
