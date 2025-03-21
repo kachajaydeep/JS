@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Function_nested</title>
+</head>
+<body>
+     <p id="demo"></p>
+
+     <script>
+          function addSquares(a,b){
+               function square(x){
+                    return x * x;
+               }
+               return square(a) + square(b);
+          }
+
+          const result = addSquares(4,3);
+          document.getElementById("demo").innerHTML = result;
+     </script>
+</body>
+</html>

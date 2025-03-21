@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Pass argument another function</title>
+</head>
+<body>
+     <p id="demo"></p>
+
+     <script>
+          function map(f,a){
+               const result = new Array(a.length);
+               for (let i=0; i< a.length; i++){
+                    result[i] = f(a[i]);
+               }
+               return result;
+          }
+
+          const numbers = [0,1,2,4,5,6];
+          const cubeNumbers = map(function (x){
+               return x * x * x;
+          },numbers);
+          console.log(cubeNumbers); //
+     </script>
+</body>
+</html>
