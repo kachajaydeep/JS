@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Accessing_Js_Properties</title>
+</head>
+<body>
+     <p id="demo1"></p>
+     <p id="demo2"></p>
+     <p id="demo3"></p>
+
+     <script>
+          const person1 = {
+               FirstName:"John",
+               LastName:"Doe",
+               age:25,
+               email:"johndoe@yahoo.com"
+          };
+
+          const person2 = {
+               FirstName:"opera",
+               LastName:"FireFox",
+               age:11,
+               email:"hitesh@gmail.com"
+          };
+
+          const person3 = {
+               FirstName:"edge",
+               LastName:"MyFavorite",
+               age:22,
+               email:"codeWithHarry@gmail.com"
+          };
+
+          let y = "age";
+          let age = person1.age;
+          let age1 = person2["age"];
+
+
+          document.getElementById("demo1").innerHTML = age;
+          document.getElementById("demo2").innerHTML = age1;
+          document.getElementById("demo3").innerHTML = person3[y];
+     </script>
+</body>
+</html>

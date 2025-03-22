@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Another-delete-method</title>
+</head>
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const person = {
+               firstName: "john",
+               LastName:"Doe",
+               age:50,
+               eyeColor:"blue"
+          };
+          delete person["firstName"];
+
+          // person.firstName = "ramu";
+          document.getElementById("demo").innerHTML = person.firstName
+     </script>
+</body>
+</html>

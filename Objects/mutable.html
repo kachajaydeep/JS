@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>mutable</title>
+</head>
+<body>
+     <p>primitive values are Immutable because gives copy of address.</p>
+     <p>Javascript Functions are Immutable, Provide Objects to Original Data.</p>
+     <p id="demo"></p>
+
+     <script>
+          const person = {
+               firstName:"John",
+               LastName:"Doe",
+               age:50,
+               eyecolor:"blue",
+          }
+
+          const x = person;
+          x.firstName = "Harsh";
+          document.getElementById("demo").innerHTML = person.firstName;
+     </script>
+</body>
+</html>

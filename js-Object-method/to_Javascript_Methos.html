@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>To-Js_methods</title>
+</head>
+<body>
+     <p id="demo"></p>
+     <script>
+          const person = {
+               firstName:"hello",
+               LastName:"world",
+               age:23
+          };
+          person.name = function (){
+               return (person.firstName + " " + person.LastName + " is a age " + person.age).toUpperCase();
+          }
+          document.getElementById("demo").innerHTML= person.name();
+     </script>
+</body>
+</html>
