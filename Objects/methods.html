@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Methods</title>
+</head>
+<body>
+     <h1>JavaScript Object</h1>
+     <p>Javascript Object Methods are Function Defination, stored as a Property</p>
+     <p id="demo"></p>
+     
+     <script>
+          const Person = {
+               firstName: "John",
+               LastName:"Doe",
+               id: 5566,
+
+               fullName: function() {
+                    return this.firstName + " " + this.LastName;
+               }
+          };
+
+          document.getElementById("demo").innerHTML = Person.fullName();
+     </script>
+</body>
+</html>

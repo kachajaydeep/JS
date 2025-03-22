@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Basic of Method</title>
+</head>
+<body>
+     <p>Js Methods is a defination of a Functions.</p>
+     <p>Where this refers person object</p>
+     <p id="demo"></p>
+     <script>
+          const person ={
+               firstName : "John",
+               LastName: "Doe",
+               age:23,
+               id:210830131025,
+               FullName: function(){
+                    return this.firstName + " " + this.LastName;
+               }
+          };
+
+          document.getElementById("demo").innerHTML = person.FullName();
+     </script>
+</body>
+</html>

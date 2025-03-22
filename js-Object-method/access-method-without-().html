@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Access Methods Without breckets</title>
+</head>
+<body>
+     <p>If we Access Function Methods Without () breckets,It will return Function Definition.</p>
+     <p id="demo"></p>
+     <script>
+          const Person = {
+               FirstName: "Hello",
+               LastName:"kanaha",
+               age:12,
+               FullName: function(){
+                    return person.FirstName + " " + Person.LastName;
+               }
+          }
+
+          document.getElementById("demo").innerHTML = Person.FullName;
+     </script>
+</body>
+</html>

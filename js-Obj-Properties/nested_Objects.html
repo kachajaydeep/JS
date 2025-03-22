@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Nested_objects</title>
+</head>
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const cars = {
+               car1: "odi",
+               car2: "ambeseder",
+               cars3: "maruti",
+
+               myCars_Collaction : {
+                    car1:"rollsroyals",
+                    car2: "BMW",
+                    car3: "XUV100"
+               }
+          }
+
+          document.getElementById("demo").innerHTML = cars.myCars_Collaction.car3;
+     </script>
+</body>
+</html>

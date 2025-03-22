@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Using-New-Keyword</title>
+</head>
+<body>
+     <p>It's Not Need To use <b>New Object()</b> </p>
+
+     <p>For Readability,Simplicity and execution Speed, use the Object Literal Method.</p>
+
+     <p>Access Object Properties ObjectName.propertyName.</p>
+     <p>Also access Object Properties ObjectName["PropertyName"].</p>
+     
+     <p id="demo"></p>
+     <script>
+          const person = new Object();
+          
+          person.FirstName = "Lala ";
+          person.LastName = "Risk Hai To Ishq hai ";
+          person.age = 50;
+          person.eyeColor = "black";
+
+          document.getElementById("demo").innerHTML = person.FirstName + person.LastName + "said by harsad Maheta. "
+     </script>
+</body>
+</html>

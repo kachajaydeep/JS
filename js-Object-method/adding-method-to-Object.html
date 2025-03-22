@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Adding-Method To Object</title>
+</head>
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const bike = {
+               bike1: "Honda",
+               bike2: "Hero",
+               bike3: "Livo"
+          }
+
+          bike.name = function() {
+               return bike.bike1 + " " + bike.bike2 + " " + bike.bike3;
+          }
+
+          document.getElementById("demo").innerHTML = bike.name();
+     </script>
+</body>
+</html>
