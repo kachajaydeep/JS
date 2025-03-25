@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Display in Loops</title>
+</head>
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const cars = {
+               Name1 : "Lamborgini",
+               Name2: "Chalayi",
+               Name3: "Janayo!",
+               Name4:"Galli Gali Jai Janyo!"
+          }
+
+          let text = "";
+          for(let y in cars){
+               text+= cars[y]+ " ";
+          }
+          document.getElementById("demo").innerHTML = text;
+     </script>
+</body>
+</html>

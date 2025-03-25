@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Object Entries</title>
+</head>
+<body>
+     <p>Object.Entries makes it simple to use Object in loops.</p>
+     <p id="demo"></p>
+
+     <script>
+          let cars = {
+               RollsRoyal: 1000000,
+               ambeseder:100000,
+               odi:20000,
+               farari:300000
+          };
+
+          let x = "";
+          for(let [car,amount] of Object.entries(cars)){
+               x+=car + " : " + amount + "<br>";
+          }
+          document.getElementById("demo").innerHTML = x;
+     </script>
+</body>
+</html>

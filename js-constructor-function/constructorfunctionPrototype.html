@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Constructor Function Prototype</title>
+</head>
+<body>
+     <p id="demo"></p>
+
+     <script>
+          function Person(first ,last ,age) {
+               this.firstName = first;
+               this.lastname = last;
+               this.age = age;
+          }
+
+          const mySister = new Person("sara ", "gaba" , 23);
+          const myGuruji = new Person("Hitesh ","Chodhary " , 63);
+
+          Person.prototype.nationally = "English";
+
+          document.getElementById("demo").innerHTML = mySister.firstName + mySister.lastname  + " is a nationally " +  mySister.nationally;
+     </script>
+</body>
+</html>
