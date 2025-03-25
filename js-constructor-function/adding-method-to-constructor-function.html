@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>adding method to constructor function</title>
+</head>
+<body>
+     <p id="demo"></p>
+
+     <script>
+          function Person(firstName,LastName,age,eyeColor){
+               this.firstName =firstName;
+               this.LastName = LastName;
+               this.age = age;
+               this.eyeColor = eyeColor;
+          }
+
+          const myMother = new Person("sally","rally",48,"green");
+
+          Person.prototype.changeName =function (name){
+               this.lastName=name;
+          }
+          myMother.changeName("doe");
+
+          document.getElementById("demo").innerHTML = "My Mother's Last Name is "+ myMother.lastName;
+          
+     </script>
+</body>
+</html>

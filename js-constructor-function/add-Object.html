@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Add Object</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+
+     <script>
+
+          function Person(first, Last, third) {
+               this.firstName = first;
+               this.lastname = Last;
+               this.age = third;
+          }
+
+          const meet = new Person("meet", "bhavanandi ", "20");
+          const me = new Person("I am ", "Waiting!... ", " For Your Answer");
+
+          meet.nationally = "English";  
+          document.getElementById("demo").innerHTML = meet.firstName + " " + meet.lastname + meet.age + " years old! " + meet.nationally;
+
+          document.getElementById("demo1").innerHTML = me.firstName + " " + me.lastname + me.age
+     </script>
+</body>
+
+</html>

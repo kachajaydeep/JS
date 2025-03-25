@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>also Have Method to Constructor function</title>
+</head>
+<body>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+
+     <script>
+          function Person(first, last, Third){
+               this.firstname = first;
+               this.lastname = last;
+               this.third = Third;
+               this.fullname = function(){
+                    return this.firstname + " " +this.lastname + " " + this.third;
+               };
+          }
+
+          const myObject = new Person("hello", "world", "hmm..");
+          const myObject2 = new Person("hello", "how","are You!");
+
+          document.getElementById("demo").innerHTML = myObject.fullname();
+          document.getElementById("demo1").innerHTML = myObject2.fullname();
+     </script>
+</body>
+</html>

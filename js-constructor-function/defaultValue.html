@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Default Value For Constructor</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+
+     <script>
+          function Person(first, last, email, age, nationally) {
+               this.firstname = first;
+               this.lastname = last;
+               this.email = email;
+               this.age = age;
+               this.nationally = "Indian";
+          };
+
+          const myUncle = new Person("kamelsh", "Bhesaniya", "kamlesh@gmail.com", 40, "africa");
+          const myuntie = new Person("kamla", "bheshaniya", "kamla@gmail.com", 60);
+
+          document.getElementById("demo").innerHTML = myUncle.firstname + " " + myUncle.lastname + " email is a" + myUncle.email + " " + myUncle.nationally;
+          document.getElementById("demo1").innerHTML = myuntie.firstname + " " + myuntie.lastname + " email is a" + myuntie.email + " " + myuntie.nationally;
+
+     </script>
+</body>
+
+</html>

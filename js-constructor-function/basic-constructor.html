@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Basic Constructor</title>
+</head>
+<body>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+
+     <script>
+          function Organization(first,Last,age,email){
+              this.firstname =  first;
+              this.Lastname = Last;
+              this.age = age;
+              this.email =  email;
+          };
+
+          const myCompany = new Organization("rohan" ,"mohan", 23,"blackroack@gmail.com");
+          const myCompany1 = new Organization("mohan","chaman",26,"microsoft@gmail.com");
+
+          document.getElementById("demo").innerHTML = myCompany.firstname + " " + myCompany.Lastname + " both are working on BlackRoack " + myCompany.email;
+          document.getElementById("demo1").innerHTML = myCompany1.firstname + " " +myCompany1.Lastname + " both are Working on Microsoft " + myCompany1.email;
+     </script>
+</body>
+</html>
