@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>addEventListener()</title>
+</head>
+<body>
+     <h1 id="demo">Mouse me!</h1>
+
+     <script>
+          document.getElementById("demo").addEventListener("mouseover",onMouseOver);
+          document.getElementById("demo").addEventListener("mouseout",onMouseOut);
+
+          function onMouseOver() {
+             document.getElementById("demo").style.color = "red";
+          }
+
+          function onMouseOut(){
+               document.getElementById("demo").style.color ="black";
+          }
+     </script>
+</body>
+</html>

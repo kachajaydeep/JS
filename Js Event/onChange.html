@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>OnChange</title>
+</head>
+
+<body>
+     <p>call function when a user changes the selected option of a select element.</p>
+     <p>the onchange event occcur when the value of an html Element is changed.</p>
+     <select id="mySelect" onchange="myFunction()">
+          <option value="Rajkot">Rajkot</option>
+          <option value="Ahemdabad">Ahemdabad</option>
+          <option value="Surat">Surat</option>
+          <option value="Gandhinager">Gandhinager</option>
+     </select>
+     <p id="demo"></p>
+
+
+     <script>
+          function myFunction() {
+               var x = document.getElementById("mySelect").value;
+               document.getElementById("demo").innerHTML = "You Selected" + x;
+          }
+     </script>
+</body>
+
+</html>

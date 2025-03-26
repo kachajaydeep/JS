@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>onmouseover</title>
+</head>
+<body>
+     <img src="../leaf.jpg" alt="leaf_Img" width="100px" height="100px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+
+     <script>
+           function bigImg(x){
+               x.style.height = "500px";
+               x.style.width = "600px";
+           } 
+           function normalImg(y){
+               y.style.width = "100px";
+               y.style.height = "100px";
+           }
+     </script>
+</body>
+</html>
