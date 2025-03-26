@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Accept Function Parameter</title>
+</head>
+<body>
+     <p>BigInt() and Symbol() are give error with new keyword when we create object.</p>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+     <p id="demo2"></p>
+
+     <script>
+          const numberObj = new Number(1);
+          document.getElementById("demo").innerHTML = typeof numberObj;
+
+          // const bigintObj =new BigInt(1n);
+          // document.getElementById("demo1").innerHTML = typeof bigintObj;
+
+          // const symbolObj =new Symbol("foo");
+          // document.getElementById("demo2").innerHTML =typeof symbolObj;
+     </script>
+</body>
+</html>

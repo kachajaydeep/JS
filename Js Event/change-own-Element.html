@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Change Content of Own Element</title>
+     <style>
+          button{
+               border: none;
+               background-color: red;
+               color: #000;
+               padding: 20px;
+               font-size: 60px;
+          }
+     </style>
+</head>
+<body>
+     <p>In this Example The changes the content of its own Elemenet</p>
+     <p id="demo"></p>
+     
+     <button onclick="this.innerHTML = Date()">The Time is??</button>
+</body>
+</html>

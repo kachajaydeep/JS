@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Arithmatic-operators</title>
+</head>
+<body>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+     <p id="demo2"></p>
+     <p id="demo3"></p>
+     <p id="demo4"></p>
+     <p id="demo5"></p>
+     <p id="demo6"></p>
+     <p id="demo7"></p>
+     <p id="demo8"></p>
+     <p id="demo9"></p>
+     <p><b>Note: </b> In <mark>Postfix</mark> It will return Value First and Then It Will Increament.</p>
+     <p><b>Note: </b> In <mark>PreFix</mark> It will Increament Value First and Then It Will return value.</p>
+
+     <script>
+          let a = 12;
+          let b = 5;
+          let count = 5;
+          document.getElementById("demo").innerHTML = a + b + ": Addition Operators";
+          document.getElementById("demo1").innerHTML = a - b + ": Subtraction Operator";
+          document.getElementById("demo2").innerHTML = a * b + ": Multiplication Operator. ";
+          document.getElementById("demo3").innerHTML =  a / b + ": Division Operator";
+          document.getElementById("demo4").innerHTML = a ** b + " : exponenetial Operator.";
+          document.getElementById("demo5").innerHTML = a % b + " : modulo Operators";
+          document.getElementById("demo6").innerHTML = "count = count + 1  =>  "+ count++ + ": Postfix Operators"; 
+          document.getElementById("demo7").innerHTML = count;
+          document.getElementById("demo8").innerHTML ="count = count + 1  => " + ++count + " Prefix Operators";
+     </script>
+</body>
+</html>
