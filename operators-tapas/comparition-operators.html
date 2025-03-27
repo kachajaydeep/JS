@@ -13,17 +13,26 @@
      <p id="demo5"></p>
      <p id="demo6"></p>
      <p id="demo7"></p>
-     <p id="demo8"></p>
-     <p id="demo9"></p>
-     <p id="demo10"></p>
-
+     
      <script>
-          document.getElementById("demo1").innerHTML =  0 == false; //Because It is only checking values.
+          document.getElementById("demo1").innerHTML =  (0 == false) +": Because It is only checking values.";
           document.getElementById("demo2").innerHTML = 3 == '3'; 
-          document.getElementById("demo3").innerHTML = 3 === '3';  //It's called strikly equal Operators,  because It's Strikly check Operands type with value.
-          document.getElementById("demo4").innerHTML = null == undefined; 
-          document.getElementById("demo5").innerHTML = null == undefined; 
+          document.getElementById("demo3").innerHTML = (3 === '3')+ ": It's called strikly equal Operators,  because It's Strikly check Operands type with value."
+          document.getElementById("demo4").innerHTML = (null == undefined); 
+          document.getElementById("demo5").innerHTML = (null == undefined); 
           // NaN = Not a Number
+
+          let obj1 = {
+               'name':"script"
+          };
+
+          let obj2 ={
+               'name' : "script"
+          };
+
+          document.getElementById("demo6").innerHTML = "In Objects There are not check values but It's checks Address of an object : " + (obj1 === obj2);
+          document.getElementById("demo7").innerHTML = "In Objects There are not check values but It's checks Address of an object : " + (obj1 !== obj2);
+
      </script>
 </body>
 </html>

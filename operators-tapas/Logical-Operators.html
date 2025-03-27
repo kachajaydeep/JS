@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Logical Operators</title>
+</head>
+<body>
+     <p id="demo1"></p>
+     <p id="demo2"></p>
+     <p id="demo3"></p>
+     <p id="demo4"></p>
+     <p id="demo5"></p>
+     <p id="demo6"></p>
+     <p id="demo7"></p>
+     <p id="demo8"></p>
+     <p id="demo9"></p>
+     <p id="demo10"></p>
+     <p id="demo11"></p>
+     <p id="demo12"></p>
+     <p id="demo13"></p>
+     <p id="demo14"></p>
+     <p id="demo15"></p>
+
+     <script>
+        //&& operator
+
+          document.getElementById("demo1").innerHTML= "In op1 && op2 are in if op1 returns false then it will return op1 otherwise it returns op2 : " + (true && false);
+          document.getElementById("demo2").innerHTML= (false && false);
+          document.getElementById("demo3").innerHTML= (false && true);
+          document.getElementById("demo4").innerHTML= (true && true);
+          document.getElementById("demo5").innerHTML= ("cow" && "horse"); //It will return horse because first is not become false.
+
+          // || Operator
+          document.getElementById("demo6").innerHTML = "In op1 || op2 are in if op1 is true then it will return op1 otherwise it will return next means op2 : " + (false || true);
+          document.getElementById("demo7").innerHTML= (true || false);
+          document.getElementById("demo8").innerHTML = (false || false);
+          document.getElementById("demo9").innerHTML = (true || true);
+          document.getElementById("demo10").innerHTML = ("cow" || "horse"); //It will return horse because first is become true.
+
+
+          //??
+          document.getElementById("demo11").innerHTML = "If op1 ?? op2 are in if op1 is null or undefined then it will return op2 : " + (null ?? undefined);
+          document.getElementById("demo12").innerHTML = "If op1 ?? op2 are in if op1 is null or Undefined then it will return op2 : " + (undefined ?? null);
+          document.getElementById("demo13").innerHTML = (0 ?? "hello");
+          document.getElementById("demo14").innerHTML = (null ?? 1);
+          document.getElementById("demo15").innerHTML = (false ?? "hello");
+     </script>
+</body>
+</html>
