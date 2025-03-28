@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Replace-Cae-intensive</title>
+</head>
+
+<body>
+     <p>replace case intensive with i</p>
+
+     <p id="demo"></p>
+     <button onclick="myFunc()">Try it.</button>
+     <script>
+          let text = "Please visit Microsoft!";
+          document.getElementById("demo").innerHTML = text;
+
+          function myFunc() {
+               let check = text.replace(/MICROSOFT/i, "Oracle");
+               document.getElementById("demo").innerHTML = check;
+          }
+     </script>
+</body>
+
+</html>
