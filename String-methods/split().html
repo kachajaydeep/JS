@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <p>String can be converted into array using Split Method</p>
+     <p>Display the first array element after a String split.</p>
+     <p id="demo"></p>
+
+     <script>
+          let text = "a,b,c,d,e,f";
+          const myArray = text.split("|");
+          document.getElementById("demo").innerHTML = myArray[0];
+     </script>
+</body>
+</html>
