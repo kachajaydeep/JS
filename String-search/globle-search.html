@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Globle Search</title>
+</head>
+
+<body>
+     <p>Perform a global search for "ain":</p>
+
+     <p id="demo"></p>
+
+     <script>
+          let text = "The rain in SPAIN stays mainly in the plain";
+          const globle = text.match(/ain/g);
+          document.getElementById("demo").innerHTML = globle.length + " " + globle;
+     </script>
+</body>
+
+</html>
