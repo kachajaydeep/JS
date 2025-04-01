@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Number as a Object</title>
+</head>
+
+<body>
+     <p>Please! Please! Note That Do Not Create Number as an Object because it produce unexpected results.</p>
+     <p>The New KeyWord Complicates Code and Slow down Execution Speed.</p>
+     <p id="demo"></p>
+
+     <script>
+          let x = 123;
+          let y = new Number(123);
+          document.getElementById("demo").innerHTML = typeof x + "<br>" + typeof y;
+     </script>
+</body>
+
+</html>

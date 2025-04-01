@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Infinity as an Globle Object</title>
+</head>
+<body>
+     <p id="demo"></p>
+
+     <script>
+          let x = 2;
+          let txt = "";
+
+          while( x != Infinity ){
+               x = x * x;
+               txt = txt + x + "<br>";
+          }
+          document.getElementById("demo").innerHTML = txt;
+     </script>
+</body>
+</html>
