@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>toFixed</title>
+</head>
+<body>
+     <p>toFixed() Returns a Decimal Numbers to String.</p>
+     <p id="demo"></p>
+     <p>round . after means (Rounder decimmals values)</p>
+     <script>
+          let x = 9.656;
+          document.getElementById("demo").innerHTML =
+           x.toFixed() + "<br>" +
+           x.toFixed(0) + "<br>" + 
+           x.toFixed(1) + "<br>" +
+           x.toFixed(2);
+     </script>
+</body>
+</html>

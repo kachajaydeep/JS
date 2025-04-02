@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>In Operator</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+     <script>
+          const Person = {
+               firstName: "hello",
+               lastName: "pk!",
+               age: 30
+          };
+          delete Person.age;
+          let o = ("age in Person") ? true : false;
+          document.getElementById("demo").innerHTML = o;
+     </script>
+</body>
+
+</html>
