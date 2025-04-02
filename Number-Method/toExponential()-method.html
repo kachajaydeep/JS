@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>toExponential()</title>
+</head>
+
+<body>
+     <p>The toExponential() method returns a string, with the Number rounded and written using exponential notation.</p>
+     <p id="demo"></p>
+
+     <script>
+          let x = 9.656;
+          document.getElementById("demo").innerHTML = 
+          x.toExponential()  + "<br>" +
+          x.toExponential(2) + "<br>" + 
+          x.toExponential(3) + "<br>" +
+          x.toExponential(4);
+     </script>
+</body>
+
+</html>
