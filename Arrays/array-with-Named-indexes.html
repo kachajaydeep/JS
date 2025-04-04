@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>array with Named Indexes</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const arr = [];
+          arr[0] = "rohan";
+          arr[1] = "mohan";
+          arr[2] = "ramu";
+          arr[3] = "shamu";
+          let text = "";
+          for (i = 0; i < arr.length; i++) {
+               text += arr[i] + "<br>";
+               document.getElementById("demo").innerHTML = text ;
+          }
+     </script>
+</body>
+
+</html>
