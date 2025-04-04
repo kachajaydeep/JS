@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Solution2</title>
+</head>
+<body>
+     <p>The instanceof operator returns true if an object is an instanceof a specified object type:</p>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+
+     <script>
+          const fruits = ["apples","banana","Oranges"];
+          const animal = new Array("apples","banana","Oranges");
+          document.getElementById("demo").innerHTML = " is this array ?:" + (fruits instanceof Array);
+          document.getElementById("demo1").innerHTML = " is this array ?:" + (animal instanceof Array);
+     </script>
+</body>
+</html>

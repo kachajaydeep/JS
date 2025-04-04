@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>add-array</title>
+</head>
+<body>
+     <p>The Push methods appends a new Element to an array.</p>
+     <p id="demo"></p>
+     <button onclick="myFun()">add element!</button>
+
+     <script>
+          const arr = ["tree","chair","orange"];
+          document.getElementById("demo").innerHTML =arr;
+
+          function myFun(){
+               arr.push("birds");
+               document.getElementById("demo").innerHTML = arr;
+          }
+     </script>
+</body>
+</html>

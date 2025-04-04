@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>arrayName.length</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+     <button onclick="myFun()">Try it!</button>
+     <script>
+          const fruits = ["birds", "chair", "mena", "popat"];
+          document.getElementById("demo").innerHTML = fruits;
+
+          function myFun() {
+               fruits[fruits.length] = "duck";
+               document.getElementById("demo").innerHTML = fruits;
+          }
+     </script>
+</body>
+
+</html>
