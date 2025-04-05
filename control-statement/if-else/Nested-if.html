@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Nested If</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const condition = true;
+          const innerCondition = false;
+
+          if (condition) {
+               document.write("Outer If Condition <br>")
+               if (innerCondition) {
+                    document.write("Inner true Condition <br>");
+               }
+               else {
+                    document.write("Inner false Condition <br>")
+               }
+          }
+          else {
+               document.write("outer Else Condition");
+          }
+     </script>
+</body>
+
+</html>
