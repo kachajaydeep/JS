@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Splice Return With Removes Items.</title>
+</head>
+
+<body>
+     <p id="demo1"></p>
+     <p id="demo2"></p>
+     <p id="demo3"></p>
+     <!-- <p id="demo4"></p> -->
+
+     <script>
+          const arr = ["arr1", "arr2", "arr5", "arr6"];
+          document.getElementById("demo1").innerHTML = "Original Array:<br>" + arr;
+          let newarr = arr.splice(2, 2, "arr3", "arr4");
+          document.getElementById("demo2").innerHTML = "New Array:<br>" + arr;
+          document.getElementById("demo3").innerHTML = "Removed Items:<br>" + newarr;
+     </script>
+</body>
+
+</html>

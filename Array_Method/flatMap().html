@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>flating()</title>
+</head>
+
+<body>
+     <p>The flatmap() method first maps all element of an array and then create new array by flating the array.</p>
+     <p id="demo"></p>
+
+     <script>
+          const numbers = [1, 2, 3, 4, 5];
+          const flating = numbers.flatMap(x => [x, x * 100]);
+          document.getElementById("demo").innerHTML = flating;
+     </script>
+</body>
+
+</html>

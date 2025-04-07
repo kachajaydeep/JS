@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Splice To Remove an Element</title>
+</head>
+
+<body>
+     <p id="demo1"></p>
+     <p id="demo2"></p>
+
+     <script>
+          const animal = ["lion", "Cow", "horse"];
+          document.getElementById("demo1").innerHTML = animal;
+          animal.splice(0, 1);
+          document.getElementById("demo2").innerHTML = animal;
+     </script>
+</body>
+
+</html>
