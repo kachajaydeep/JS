@@ -4,16 +4,17 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>copy-array</title>
+     <title>Multidimention Array Into Single Dimention</title>
 </head>
 
 <body>
-     <p>Copy to index 2, all elements from index 0.</p>
      <p id="demo"></p>
 
      <script>
-          const fruits = ["banana", "cherry", "Apple", "Mango"];
-          document.getElementById("demo").innerHTML = fruits.copyWithin(3, 1)
+          const myArr = [[1, 2], [3, 4], [5, 6]];
+
+          const newArr = myArr.flat();
+          document.getElementById("demo").innerHTML = newArr;
      </script>
 </body>
 
