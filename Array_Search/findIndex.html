@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const num = [4, 9, 13, 25, 29];
+
+          document.getElementById("demo").innerHTML = "First number over 18 has index " + num.findIndex(myIndex);
+
+          function myIndex(value, index, array) {
+               return value > 18;
+          }
+     </script>
+</body>
+
+</html>
