@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>LastIndex</title>
+</head>
+<body>
+     <p id="demo"></p>
+     <p><b>Array.lastIndexOf()</b> is the same as Array.indexOf(), but returns the Position of the last occurence of the specified element.</p>
+     <script>
+          const fruits = ["Apple","Orange","Apple","Mango"];
+          let position = fruits.lastIndexOf("Apple") + 1;
+
+          document.getElementById("demo").innerHTML = position;
+     </script>
+</body>
+</html>
