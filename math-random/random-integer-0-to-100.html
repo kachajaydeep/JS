@@ -3,16 +3,13 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>toSorted()</title>
+     <title>random-integer-0-to-100</title>
 </head>
 <body>
      <p id="demo"></p>
 
      <script>
-          const months = ["Jan","Feb","March","April"];
-          const sorted = months.toSorted();
-
-          document.getElementById("demo").innerHTML = sorted;
+          document.getElementById("demo").innerHTML = Math.floor(Math.random() * 101);
      </script>
 </body>
 </html>

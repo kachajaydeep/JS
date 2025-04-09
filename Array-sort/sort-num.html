@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Shorting-numeric</title>
+</head>
+
+<body>
+     <p>In array numeric sort can give us incorrect result.</p>
+     <p id="demo1"></p>
+     <p id="demo2"></p>
+     <p id="demo3"></p>
+
+     <script>
+          const arr = [8, 9, 30, 20, 90, 60];
+          document.getElementById("demo1").innerHTML = arr;
+
+          arr.sort(function (a, b) { return a - b }); /* if the negative value arrise then it will return "a" 
+                                                         otherwise if Positive Value arrise then it will taken the "b" */
+
+          document.getElementById("demo2").innerHTML = arr;
+     </script>
+</body>
+
+</html>
