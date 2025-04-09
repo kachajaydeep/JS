@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Compare-sort</title>
+</head>
+<style>
+     button{
+          background-color: black;
+          color: white;
+          font-family: 'Times New Roman', Times, serif;
+          border: none;
+          padding: 20px;
+          font-size: 1rem;
+          border-radius: 30px;
+          box-shadow: 4px 4px 10px 5px red;
+     }
+</style>
+<body>
+     <button onclick="f1()">Numeric Sorting.</button>
+     <button onclick="f2()">Alphabetic Sorting.</button>
+     <p id="demo1"></p>
+     <p id="demo2"></p>
+     <p id="demo3"></p>
+
+     <script>
+          const arr1 = [1, 2, 3, 4, 30, 40, 50, 90, 100, 5, 6, 7, 8, 9, 10, 20];
+          document.getElementById("demo1").innerHTML = arr1
+
+          function f1() {
+               arr1.sort(function (a, b) { return a - b; });
+               document.getElementById("demo2").innerHTML = arr1;
+          }
+
+          function f2() {
+               arr1.sort();
+               document.getElementById("demo2").innerHTML = arr1
+          }
+     </script>
+</body>
+
+</html>
