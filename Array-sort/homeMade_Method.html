@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>HomeMade Method To Find Minimum Element In array</title>
+</head>
+
+<body>
+     <p>The minimum Value of array is a <span id="demo"></span></p>
+
+     <script>
+          const array = [40, 100, 1, 5, 25, 10];
+          document.getElementById("demo").innerHTML = myFuncVal(array);
+
+          function myFuncVal(arr) {
+               let len = arr.length;
+               let min = Infinity;
+
+               while (len--) {
+                    if (arr[len] < min) {
+                         min = arr[len];
+                    }
+               }
+               return min;
+          }
+     </script>
+</body>
+
+</html>

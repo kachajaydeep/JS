@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Driving-License</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          let age = 19;
+          if (age >= 18) {
+               document.getElementById("demo").innerHTML = `<b>Congratulations!</b> You are ${age} Years old So You are Eligible to apply Driving licence`;
+          }
+          else if (age >= 16) {
+               document.getElementById("demo").innerHTML = `You are ${age} Years old So You are Eligible to apply Driving Licence Moter Cycle Without Gear<b>MCWOG</b>  Driving Licence.`
+          }
+          else {
+               document.getElementById("demo").innerHTML = `You are ${age} Years old So You are Not Eligible to apply Driving Licence.`
+          }
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Quick Sort Algorithm</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const myarr = [
+               { name: "X00", price: 100 },
+               { name: "X01", price: 101 },
+               { name: "X02", price: 102 },
+               { name: "X03", price: 103 },
+               { name: "X04", price: 104 },
+               { name: "X05", price: 105 },
+               { name: "X06", price: 106 },
+               { name: "X07", price: 107 },
+               { name: "X08", price: 108 },
+               { name: "X09", price: 109 },
+               { name: "X10", price: 110 },
+               { name: "X11", price: 111 },
+               { name: "X12", price: 112 },
+               { name: "X13", price: 113 },
+               { name: "X14", price: 114 },
+               { name: "X15", price: 115 },
+          ];
+
+          myarr.sort((p1, p2) => {
+               if (p1.price < p2.price) { return -1 }
+               if (p1.price > p2.price) { return 1 }
+               return 0;
+          });
+
+          let txt = "";
+          myarr.forEach(myFunction);
+
+          function myFunction(value) {
+               txt += value.name + " " + value.price + "<br>";
+          }
+
+          document.getElementById("demo").innerHTML = txt;
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Reassign Array</title>
+</head>
+
+<body>
+     
+     <p>It does not Define constant array. It Defines a Constant Reference to an array.</p>
+
+     <p id="demo"></p>
+     <script>
+
+          const cars = ["Saab", "Volvo", "BMW"];
+
+          cars[0] = "Toyota";
+
+          cars.push("Audi");
+
+          document.getElementById("demo").innerHTML = cars;
+     </script>
+</body>
+
+</html>
