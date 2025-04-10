@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>HomeMade Method For Maximum Value</title>
+</head>
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const arr = [40, 100, 1, 5, 25, 10];
+          document.getElementById("demo").innerHTML = myArrVal(arr);
+
+          function myArrVal(array) {
+               let len = array.length;
+               let min = -Infinity;
+
+               while (len--) {
+                    if (array[len] > min) {
+                         min = array[len];
+                    }
+               }
+
+               return min;
+          }
+     </script>
+</body>
+</html>
