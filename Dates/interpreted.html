@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>interpreted-century</title>
+</head>
+
+<body>
+     <p>One and Two Digit Years will be interpreted as 19xx: It only represent previous century.</p>
+     <p id="demo"></p>
+
+     <script>
+          const date = new Date(30, 10, 26);
+          document.getElementById("demo").innerHTML = date;
+     </script>
+</body>
+
+</html>
