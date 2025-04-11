@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Array Month</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const months = ["Jan", "Feb", "Mar", "April", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+          const d = new Date("2023-02-12");
+
+          let month = months[d.getMonth()];
+
+          document.getElementById("demo").innerHTML = month;
+
+     </script>
+</body>
+
+</html>

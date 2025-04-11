@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Default GetMonth</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const months = ["January", "February", "March", "April", "May", "Jun", "July", "Augest", "September", "Octomber", "November", "December"];
+          const d = new Date();
+          let take = months[d.getMonth()];
+          document.getElementById("demo").innerHTML = take;
+     </script>
+</body>
+
+</html>
