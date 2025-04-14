@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Compare Dates</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          let text;
+          let today = new Date();
+          let someday = new Date();
+          someday.setFullYear(2103, 0, 23);
+
+          if (someday > today) {
+               text = "Today is before January 14, 2100.";
+          }
+          else {
+               text = "Today is after January 14, 2100.";
+          }
+
+          document.getElementById("demo").innerHTML = text;
+     </script>
+</body>
+
+</html>
