@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Or-Operator</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          let x = 6;
+          let y = 5;
+
+          document.getElementById("demo").innerHTML =
+               (x == 5 || y == 5) + "<br>" +
+               (x == 6 || y == 0) + "<br>" +
+               (x == 0 || y == 3) + "<br>" +
+               (x == 6 || y == 3);
+     </script>
+</body>
+
+</html>
