@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>For_Of</title>
+</head>
+
+<body>
+     <p>for of always used with array and for in loop used with object.</p>
+     <p id="demo"></p>
+
+     <script>
+          const cars = ["odi", "BMW", "Volvo"];
+
+          // let txt = "";
+          // for (const x of cars) {
+          //      txt += x + "<br>";
+          // }
+          // document.getElementById("demo").innerHTML = txt;
+
+
+          // const symbols = {
+          //      fname: "Python",
+          //      lname: "Java",
+          //      third: "JavaScript",
+          //      fourth: "C"
+          // };
+
+          let txt = "";
+          for(const x in cars) {
+               txt += x + "<br>";
+          }
+          document.getElementById("demo").innerHTML = txt;
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Fibonnaci Series</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          let n1, n2, n3, num;
+          n1 = 0;
+          n2 = 1;
+          num = 10;
+          document.write(n1," ",n2," ");
+
+          for (let i = 2; i < num; ++i) {
+               n3 = n1 + n2;
+               document.write(n3," ");
+               n1 = n2; 
+               n2 = n3;
+          }    
+
+     </script>
+</body>
+
+</html>
