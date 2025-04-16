@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Random Number To Generate Link</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          let text;
+
+          if (Math.random() < 0.5) {
+               text = "<a href = 'https://www.linkedin.com/in/jaydeep-kacha-65566b232/' target ='_blank'>Visit Linkdin</a>"
+          }
+          else {
+               text = "<a href = 'https://kachajaydeep.github.io/Tasks/' target ='_blank'>Visit Github</a>"
+          }
+
+          document.getElementById("demo").innerHTML = text;
+     </script>
+</body>
+
+</html>
