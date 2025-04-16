@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>collect to array using While</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const cars = ["Odi", "Farari", "TATA Motors"];
+          let i = 0;
+          let text = "";
+          for (;cars[i];) {
+               text += cars[i] + "<br>";
+               i++;
+          }
+
+          document.getElementById("demo").innerHTML = text;
+     </script>
+</body>
+
+</html>
