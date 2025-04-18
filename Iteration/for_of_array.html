@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>For of Array</title>
+</head>
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const alphabets = ["a", "b", "c"];
+
+          let text = "";
+
+          for(let x of alphabets){
+               text += x + "<br>";
+          }
+
+          document.getElementById("demo").innerHTML = text;
+     </script>
+</body>
+</html>

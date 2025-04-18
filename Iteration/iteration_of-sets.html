@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Iteration Of Sets</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+
+     <script>
+          const letters = new Set(["a", "b", "c"]);
+
+          let text = "";
+          for (const x of letters) {
+               text += x + "<br>";
+          }
+
+          document.getElementById("demo").innerHTML = text;
+          document.getElementById("demo1").innerHTML = "The set has " + letters.size + " values.";
+     </script>
+</body>
+
+</html>

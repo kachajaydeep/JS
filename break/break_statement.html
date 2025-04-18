@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Break Statement</title>
+</head>
+
+<body>
+     <p>The break Statement use to "Jump out" of a loop or Switch Statement.</p>
+     <p id="demo"></p>
+
+     <script>
+          let text = "";
+
+          for (let i = 0; i < 10; i++) {
+               if (i === 3) {
+                    break;
+               }
+               text += "The Number is a : " + i + "<br>";
+          }
+
+          document.getElementById("demo").innerHTML = text;
+     </script>
+</body>
+
+</html>

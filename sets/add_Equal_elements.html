@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Add Equal Elements</title>
+</head>
+
+<body>
+
+     <p id="demo"></p>
+     <p id="demo1"></p>
+
+     <script>
+
+          const letters = new Set(["a", "b", "c"]);
+
+          letters.add("a");
+          letters.add("b");
+          letters.add("c");
+          letters.add("c");
+          letters.add("c");
+          letters.add("c");
+          letters.add("c");
+          letters.add("c");
+          letters.add("d");
+
+          let text = "";
+
+          for (let x of letters) {
+               text += x + "<br>";
+          }
+
+          document.getElementById("demo").innerHTML = text;
+          document.getElementById("demo1").innerHTML = "The set has " + letters.size + " Values. ";
+     </script>
+</body>
+
+</html>
