@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>For Of Array Numbers</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const numbers = [0, 1, 1, 2, 3, 5, 8];
+
+          let text = "";
+
+          for (let x of numbers) {
+               text += x + "<br>";
+          }
+
+          document.getElementById("demo").innerHTML = text;
+     </script>
+</body>
+
+</html>
