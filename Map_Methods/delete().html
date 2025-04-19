@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Delete()</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const cars = new Map([
+               ["RangeRower", 100],
+               ["TATA Motors", 200],
+               ["ODI", 900]
+          ]);
+          cars.delete("ODI");
+          document.getElementById("demo").innerHTML = cars.size;
+     </script>
+</body>
+
+</html>

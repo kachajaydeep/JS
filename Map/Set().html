@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Set()</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const fruits = new Map();
+
+          fruits.set("apples", 80);
+          fruits.set("banana", 90)
+          fruits.set("Mango", 1200);
+
+          // let text = "";
+          // for (const x of fruits) {
+          //      text += x + "<br>";
+          // }
+
+          let numb = fruits.get("apples")
+          document.getElementById("demo").innerHTML = "The Apple Price is a : " + numb + " Ruppes. ";
+     </script>
+</body>
+
+</html>

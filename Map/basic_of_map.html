@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Basic of Map</title>
+</head>
+
+<body>
+     <p>A Map Holds key-value pairs where the keys can be any Datatype.</p>
+     <p>A Map remembers the Original insertion order of the keys.</p>
+     <p id="demo"></p>
+
+     <script>
+          const fruits = new Map([
+               ["apples", 500],
+               ["bananas", 300],
+               ["Oranges", 200]
+          ]);
+
+          let numb = fruits.get("apples");
+          document.getElementById("demo").innerHTML = "The Apple Price is " + numb + " apples. ";
+     </script>
+</body>
+
+</html>

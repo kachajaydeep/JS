@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>has()</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const cars = new Map([
+               ["apples", 200],
+               ["Banana", 100],
+               ["orange", 200]
+          ]);
+
+          document.getElementById("demo").innerHTML = cars.has("orange");
+
+     </script>
+</body>
+
+</html>
