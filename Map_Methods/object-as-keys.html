@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Object as Keys</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const apples = { name: "apples" };
+          const bananas = { name: "Bananas" };
+          const oranges = { name: "Oranges" };
+
+          //Create a Map.
+          const fruits = new Map();
+
+          //Add the Objects to the Map. 
+
+          fruits.set(apples, 500);
+          fruits.set(bananas, 300);
+          fruits.set(oranges, 200);
+
+          document.getElementById("demo").innerHTML = fruits.get(apples);
+     </script>
+</body>
+
+</html>

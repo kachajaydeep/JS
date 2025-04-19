@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Type Of Variable</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          document.getElementById("demo").innerHTML =
+               "'John' is " + typeof "John" + "<br><br>" +
+               "('John' +  'Doe') is " + typeof ("John" + "Doe") + "<br><br>" +
+               "3.14 is " + typeof 3.14 + "<br><br>" +
+               "33 is " + typeof 33 + "<br><br>" +
+               "( 33 + 66) is " + typeof (33 + 66) + "<br><br>" +
+               "NaN is " + typeof NaN + "<br><br>" +
+               "true is " + typeof true + "<br><br>" +
+               "false is " + typeof false + "<br><br>" +
+               "1234n is " + typeof 1234n + "<br><br>" +
+               "Symbol() is " + typeof Symbol + "<br><br>" +
+               "x is " + typeof x;
+     </script>
+</body>
+
+</html>
