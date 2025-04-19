@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Keys()</title>
+</head>
+
+<body>
+     <p>The keys() Method returns object iterator with the keys in map.</p>
+     <p id="demo"></p>
+
+     <script>
+          const fruits = new Map([
+               ["apples", 2000],
+               ["Banana", 6000],
+               ["Orange", 8000],
+          ]);
+
+          let text = "";
+          for (const x of fruits.keys()) {
+               text += x + "<br>";
+          }
+
+          document.getElementById("demo").innerHTML = text;
+     </script>
+</body>
+
+</html>

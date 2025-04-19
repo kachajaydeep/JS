@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Type Of Return Non Primitive</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          document.getElementById("demo").innerHTML =
+               typeof { name: 'John' } + "<br>" +
+               typeof [1, 2, 3, 4] + "<br>" +
+               typeof new Map() + "<br>" +
+               typeof new Set() + "<br>" +
+               typeof null + "<br>" +
+               typeof function myFunc() { };
+     </script>
+</body>
+
+</html>

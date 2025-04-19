@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>also case Sensitive</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const apples = { name: "Apples" };
+          const banana = { name: "Banana" };
+          const grabs = { name: "Grabs" };
+
+          const fruits = new Map();
+
+          fruits.set(200);
+          fruits.set(300);
+          fruits.set(500);
+
+          document.getElementById("demo").innerHTML = fruits.get("apples");
+     </script>
+</body>
+
+</html>
