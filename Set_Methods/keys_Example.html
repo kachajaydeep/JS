@@ -4,7 +4,7 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>has Methods</title>
+     <title>Keys Example2</title>
 </head>
 
 <body>
@@ -12,8 +12,14 @@
 
      <script>
           const letters = new Set(["a", "b", "c"]);
-          answer = letters.has("d");
-          document.getElementById("demo").innerHTML = answer;
+
+          let text = "";
+
+          for (const x of letters.keys()) {
+               text += x + "<br>";
+          }
+
+          document.getElementById("demo").innerHTML = text;
      </script>
 </body>
 

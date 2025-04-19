@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Map() Method</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const fruits = new Map([
+               ["apple", 300],
+               ["grabs", 200],
+               ["banana", 100]
+          ]);
+
+          let numb = fruits.get("apple")
+          document.getElementById("demo").innerHTML = "The Apple is " + numb + " Price. ";
+     </script>
+</body>
+
+</html>

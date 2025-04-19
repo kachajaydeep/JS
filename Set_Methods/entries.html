@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>entries</title>
+</head>
+
+<body>
+     <p>The entries Method Returns an Iterator with [value,value] pairs from set.</p>
+     <p>The entries Methos return [key,value] pairs in an Object</p>
+     <p>A Set has no keys, So entries Method Returns [value, value]. </p>
+     <p id="demo"></p>
+
+     <script>
+          const letters = new Set(["a", "b", "c"]);
+          const iterator = letters.entries();
+
+          let text = "";
+
+          for (const x of iterator) {
+               text += x + "<br>";
+          }
+
+          document.getElementById("demo").innerHTML = text;
+     </script>
+</body>
+
+</html>
