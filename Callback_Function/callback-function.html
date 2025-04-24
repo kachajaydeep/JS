@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Callback Function</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          function onDisplay(some) {
+               document.getElementById("demo").innerHTML = some;
+          }
+
+          function Creation(num1, num2, myCallback) {
+               let result = num1 + num2;
+               myCallback(result);
+          }
+
+          Creation(20, 5, onDisplay);
+     </script>
+</body>
+
+</html>
