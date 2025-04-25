@@ -1,13 +1,14 @@
-const listItems = document.querySelectorAll("li");
+const listitems = document.querySelectorAll("li");
 
-function toggleDone(e) {
+function toggle(e) {
      if (!e.target.className) {
           e.target.className = "done";
-     } else {
+     }
+     else {
           e.target.className = "";
      }
 }
 
-listItems.forEach((item) => {
-     item.addEventListener("click", toggleDone);
+listitems.forEach((item) => {
+     item.addEventListener("click", toggle);
 });
