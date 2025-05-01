@@ -11,6 +11,26 @@
 <body>
      <h1>People Entered:</h1>
      <h2 id="count-el">0</h2>
+     <button id="increment">Increment</button>
+     <button id="decrement">Decrement</button>
+
+     <script>
+          let count = 0;
+          function toChange(){
+               count += 1
+               document.getElementById("count-el").innerHTML = count;
+          }
+
+          function toDecrease(){
+               count -= 1;
+               document.getElementById("count-el").innerHTML = count; 
+          }
+          let button = document.querySelector("#increment");
+          button.addEventListener("click",toChange);
+
+          let button2 = document.querySelector("#decrement");
+          button2.addEventListener("click",toDecrease);
+     </script>
 </body>
 
 </html>
