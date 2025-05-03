@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Skipping Array Values</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const array = ["apple", "Banana", "Cat", "Dog", "Elephent", "Fogg", "goat", "Hungry", "Increment"];
+
+          let [arr1, , , arr2] = array;
+
+          document.getElementById("demo").innerHTML = arr1 + " " + arr2;
+     </script>
+</body>
+
+</html>

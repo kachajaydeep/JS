@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Rest Property</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const numbers = [10, 20, 30, 40, 50];
+          const [a, b, ...rest] = numbers;
+
+          document.getElementById("demo").innerHTML =
+               "<p>a is " + a +
+               "<p>b is " + b +
+               "<p>The Rest is " + rest;
+     </script>
+</body>
+
+</html>
