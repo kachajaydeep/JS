@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>String trim Methods</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+     <p id="demo2"></p>
+     <script>
+          let text = "Every! Coding first Start with " + "    Hello World!    " + " Do You Know this? ";
+          let start = "It removes " + "  whitespace only from the starting of the any sentence.";
+          let end = "It Removes " + "whitespace only from the End of the String   ";
+          document.getElementById("demo").innerHTML = text.trim();
+          document.getElementById("demo1").innerHTML = start.trimStart();
+          document.getElementById("demo2").innerHTML = start.trimEnd();
+     </script>
+</body>
+
+</html>
