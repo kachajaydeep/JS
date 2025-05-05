@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Replace</title>
+</head>
+
+<body>
+     <p id="demo">Please visit Microsoft and Microsoft!</p>
+     <p id="demo1">Please do case insensitive Microsoft and MICROSOFT.</p>
+     <p id="demo2">Pleasen Do Replace all Microsoft and Microsoft</p>
+
+     <button onclick="myFunction()">Replace</button>
+     <button onclick="myFunc1()">case-insentive-replace</button>
+     <button onclick="myFunc2()">Replace All</button>
+
+     <script>
+          function myFunction() {
+               let text = document.getElementById("demo").innerHTML;
+               document.getElementById("demo").innerHTML =
+                    text.replace("Microsoft", "W3Schools!");
+          }
+
+          function myFunc1() {
+               let text = document.getElementById("demo1").innerHTML;
+               document.getElementById("demo1").innerHTML = text.replace(/MicroSoft/i, "W3Schools!");
+          }
+
+          function myFunc2() {
+               let text = document.getElementById("demo2").innerHTML;
+               document.getElementById("demo2").innerHTML = text.replace(/Microsoft/g, "W3Schools")
+          }
+
+     </script>
+</body>
+
+</html>

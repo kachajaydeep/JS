@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>padStart-and-padEnd</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+
+     <script>
+          let text = "5";
+          padend = text.padEnd(4, "0");
+          text = text.padStart(4, 0);
+          document.getElementById("demo").innerHTML = text;
+          document.getElementById("demo1").innerHTML = padend;
+     </script>
+</body>
+
+</html>
