@@ -4,17 +4,16 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Scientific Notation</title>
+     <title>Match()</title>
 </head>
 
 <body>
      <p id="demo"></p>
 
      <script>
-          let x = 5e5;
-          let y = 10e-3;
-
-          document.getElementById("demo").innerHTML = x + "<br>" + y;
+          let text = "The rain in SPAIN stays mainly in the plain";
+          const myArr = text.match("in");
+          document.getElementById("demo").innerHTML = myArr.length + " " + myArr;
      </script>
 </body>
 
