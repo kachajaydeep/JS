@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Function-call</title>
+</head>
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const person = {
+               fullName : function() {
+                    return this.firstname + " " + this.lastname;
+               }
+          }
+
+          const person1 = {
+               firstname: "John",
+               lastname:"D"
+          };
+
+          const person2 = {
+               firstname: "Mary",
+               lastname:"D"
+          };
+
+          document.getElementById("demo").innerHTML = person.fullName.call(person2);
+     </script>
+</body>
+</html>
