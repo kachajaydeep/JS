@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Concatantation Text</title>
+</head>
+
+<body>
+     <button>Press Me!</button>
+     <br>
+     <div id="greeding"></div>
+
+     <script>
+          const button = document.querySelector("button");
+
+          function invoke() {
+               const greeding = document.querySelector("#greeding");
+               const name = prompt("Enter Your Name");
+               greeding.textContent = `Hello Your Name is a ${name}`;
+          }
+
+          button.addEventListener("click", invoke);
+     </script>
+</body>
+
+</html>

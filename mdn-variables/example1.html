@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title></title>
 </head>
+
 <body>
-     <button id="button_A"></button>
+     <button id="button_A">Press me!</button>
      <p id="heading_A"></p>
 
      <script>
@@ -14,7 +16,12 @@
           const button_A = document.querySelector("#button_A");
           const heading_A = document.querySelector("#heading_A");;
 
-          b
+          button_A.onclick = () => {
+               button_A.textContent = "Try again!";
+               heading_A.textContent = `Your Score is a ${count}`;
+               count++;
+          }
      </script>
 </body>
+
 </html>

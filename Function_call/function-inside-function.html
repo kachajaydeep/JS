@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Function Inside Function</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const myObj = {
+               firstName: "John",
+               lastName: "Doe",
+               fullname: function () {
+                    return myObj.firstName + " " + myObj.lastName;
+               }
+          }
+          document.getElementById("demo").innerHTML = myObj.fullname();
+     </script>
+</body>
+
+</html>
