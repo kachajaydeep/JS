@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>DefineProperties</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+
+     <script>
+          const myPerson = {
+               firstName: "John",
+               lastName: "Doe",
+               age: 23
+          };
+
+          Object.defineProperties(myPerson, {
+               language: { value: "en" },
+               year: { value: 2025 },
+          });
+
+          const text = Object.entries(myPerson);
+
+          document.getElementById("demo").innerHTML = text;
+          document.getElementById("demo1").innerHTML = myPerson.language + " " + myPerson.year;
+     </script>
+</body>
+
+</html>
