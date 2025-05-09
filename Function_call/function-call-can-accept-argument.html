@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Function call Accept argument</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const Student = {
+               fullDetails: function () {
+                    return this.name + "\'s age and RollNumbers are (" + this.age + " , " + this.rollnumber+ ")";
+               }
+          }
+
+          const Student1 = {
+               name: "Deep",
+               age: 40,
+               rollnumber: 210830131030
+          };
+
+          const Student2 = {
+               name: "Parth",
+               age: 30,
+               RollNumber: 210830131039
+          };
+
+          document.getElementById("demo").innerHTML = Student.fullDetails.call(Student1);
+     </script>
+</body>
+
+</html>

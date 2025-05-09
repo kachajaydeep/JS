@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Constructor()</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+     <p>If We call object As a Constructor It returns function that Created by the Object Prototype.</p>
+     <script>
+          const person = {
+               firstName: "John",
+               lastName: "Doe",
+               age: 26
+          };
+
+          let text = person.constructor;
+          document.getElementById("demo").innerHTML = text;  
+     </script>
+</body>
+
+</html>
