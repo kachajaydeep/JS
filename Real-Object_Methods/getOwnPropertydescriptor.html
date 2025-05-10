@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>getOwnPropertydescriptor()</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const name = {
+               fname: "joe",
+               lname: "Doe",
+               age: 30,
+          }
+
+          let Descriptor = Object.getOwnPropertyDescriptor(name, "age");
+
+          document.getElementById("demo").innerHTML = Descriptor.value + " " + Descriptor.writable;
+     </script>
+</body>
+
+</html>

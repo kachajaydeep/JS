@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>getOwnPropertyName()</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const name = {
+               firstname: "Taylor",
+               lname: "Swift",
+               age: 23,
+          };
+
+          let property = Object.getOwnPropertyNames(name);
+
+          document.getElementById("demo").innerHTML = property[0];
+     </script>
+</body>
+
+</html>

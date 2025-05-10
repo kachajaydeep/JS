@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>ObjectFrozen()</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const fruits = {
+               banana: 50,
+               Apple: 600,
+               Mango: 1000,
+          };
+
+          Object.freeze(fruits);
+          fruits.Mango = 300;
+
+          document.getElementById("demo").innerHTML = Object.isFrozen(fruits); 
+     </script>
+</body>
+
+</html>
