@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>ObjectFreez()</title>
+</head>
+
+<body>
+     <p>Object.freeze() method Prevents Any Chenges to an Object</p>
+     <p>Object.freeze() methods will fail silently in non-strinct mode.</p>
+     <p>Object.freeze() Method will throw a typeError in Strict Mode.</p>
+     <p>Frozen Objects are read-only no-modification, no Deletion and no any addition of Property are allowed.</p>
+     <p><b>Object.frozen()</b> method can be used to check if an Object is frozen.</p>
+     <p id="demo"></p>
+
+     <script>
+          "use strict";
+
+          const Person = {
+               firstName: "Joe",
+               lastName: "Doe",
+               age: 50,
+          };
+
+          Object.freeze(Person);
+
+          let text;
+          try {
+               Person.age = 51;
+               text = Object.values(Person);
+          }
+          catch (err) {
+               text = err;
+          }
+
+          document.getElementById("demo").innerHTML = text;
+     </script>
+</body>
+
+</html>
