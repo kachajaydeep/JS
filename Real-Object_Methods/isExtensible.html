@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>isExtensible</title>
+</head>
+
+<body>
+     <p>The Object.isExtensible meaning is any changes happening or not.</p>
+     <p>In preventExtensions() Methods are used to Pervent addition and deletion in an Object but we can do modify
+          Object</p>
+     <p id="demo"></p>
+
+     <script>
+          const person = { firstName: "Joe", lastName: "Doe" };
+
+          Object.preventExtensions(person);
+
+          let check = Object.isExtensible(person);
+          person.firstName = "hello"
+          person.age = 32;
+          document.getElementById("demo").innerHTML = person.firstName + " " + person.age;
+     </script>
+</body>
+
+</html>

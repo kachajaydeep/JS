@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Two Objects Using is</title>
+</head>
+
+<body>
+     <p>Please Remove the age in the Object.is and then check what's a Output.</p>
+     <p id="demo"></p>
+
+     <script>
+          const Object1 = {
+               age: 23
+          };
+
+          const Object2 = {
+               age: 23
+          };
+
+          document.getElementById("demo").innerHTML = Object.is(Object1.age, Object2.age);
+     </script>
+</body>
+
+</html>
