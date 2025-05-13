@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Object Group</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+
+          const fruits = [
+               { name: "apples", quantity: 200 },
+               { name: "banana", quantity: 100 },
+               { name: "grabs", quantity: 300 },
+               { name: "Banana", quantity: 400 },
+               { name: "Kiwi", quantity: 500 }
+          ];
+
+          function Callback({ quantity }) {
+               return quantity > 200 ? "ok" : "low";
+          };
+
+          const result = Object.groupBy(fruits, Callback);
+          let text = "These Fruits are Ok: <br>";
+          for (let [x, y] of result.ok.entries()) {
+               text += y.name + " " + y.quantity + "<br>";
+          };
+
+          text += "<br>These fruits are low:<br>";
+
+          for (let [x, y] of result.low.entries()) {
+               text += y.name + " " + y.quantity + "<br>";
+          }
+
+          document.getElementById("demo").innerHTML = text;
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>array-isExtensible</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const fruits = ["apple", "Banana", "grabs", "Manngo"];
+
+          Object.preventExtensions(fruits);
+
+          let answer = Object.isExtensible(fruits);
+
+          document.getElementById("demo").innerHTML = answer;
+     </script>
+</body>
+
+</html>
