@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Object Entries()</title>
+</head>
+
+<body>
+     <p>entries Method returns an Iterator Object with the Key/Value pairs from an array.</p>
+     <p id="demo"></p>
+
+     <script>
+          const myArr = ["Banana", "Apple", "Kiwi", "graps", "Mango"];
+
+          const entry = myArr.entries();
+
+          let text = ""
+          for (let x of entry) {
+               text += x + "<br>";
+          }
+
+          document.getElementById("demo").innerHTML = text;
+     </script>
+</body>
+
+</html>
