@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+     <p><input type="number" value="18" id="ageCheck"></p>
+     <button onclick="myFunction()">try it</button>
+     <script>
+          const arr1 = [12, 30, 16, 32];
+
+          function issmall(arr1) {
+               return arr1 > document.getElementById("ageCheck").value;
+          }
+
+          function myFunction() {
+               document.getElementById("demo").innerHTML = arr1.every(issmall);
+          }
+     </script>
+</body>
+
+</html>

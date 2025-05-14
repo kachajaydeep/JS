@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Prototype</title>
+</head>
+
+<body>
+     <p>The Prototype Properties allows you to add new Properties and Methods to existing Objects.</p>
+     <p id="demo"></p>
+
+     <script>
+          function employee(name, jobtitle, born) {
+               this.name = name;
+               this.jobtitle = jobtitle;
+               this.born = born;
+          }
+
+          employee.prototype.salary = 2000;
+
+          const fred = new employee("Fred henrey", "CameraMen", 2060);
+          document.getElementById("demo").innerHTML = fred.salary;
+     </script>
+</body>
+
+</html>

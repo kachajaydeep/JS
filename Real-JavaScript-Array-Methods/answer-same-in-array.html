@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Answer Same in Array</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const survay = [
+               { name: "Steve", answer: "Yes" },
+               { name: "Jessica", answer: "Yes" },
+               { name: "Elaine", answer: "Yes" },
+               { name: "Peter", answer: "Yes" }
+          ];
+
+          function isSameAnswer(el, index, arr) {
+               if (index === 0) {
+                    return true;
+               }
+               else {
+                    return (el.answer === arr[index - 1].answer);
+               }
+          }
+
+          document.getElementById("demo").innerHTML = survay.every(isSameAnswer);
+     </script>
+</body>
+
+</html>
