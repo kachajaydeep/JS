@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Flat Example 2</title>
+</head>
+
+<body>
+     <p>The Flat Methods are Converted Multidimention array into a Single dimension array.</p>
+     <p>flat() Method Concatenates sub-array Elements.</p>
+     <p id="demo"></p>
+
+     <script>
+          const subtosubArr = [10, 20, 30, 40, [50, 60, [70, 80], 90, 100], 110, 120];
+          const flat = subtosubArr.flat();
+          document.getElementById("demo").innerHTML = flat;
+     </script>
+</body>
+
+</html>

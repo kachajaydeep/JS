@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>findIndex()</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const myArr = [3, 10, 20, 30, 40, 50];
+          function checkValue(age) {
+               return age > 18;
+          }
+          // document.getElementById("demo").innerHTML = myArr.findIndex(x => x > 20);
+
+          document.getElementById("demo").innerHTML = myArr.findIndex(checkValue);
+     </script>
+</body>
+
+</html>

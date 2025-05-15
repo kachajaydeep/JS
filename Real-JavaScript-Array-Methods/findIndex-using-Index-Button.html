@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Find Index Using Index Button</title>
+</head>
+
+<body>
+     <p><input type="number" id="checkAge" value="18"></p>
+     <button onclick="Validate()">Check Now!</button>
+     <p id="demo"></p>
+
+     <script>
+          const myArr = [20, 30, 40, 50, 60];
+
+          function Tocheck(age) {
+               return age > document.getElementById("checkAge").value;
+          }
+
+          function Validate() {
+               document.getElementById("demo").innerHTML = myArr.findIndex(Tocheck);
+          }
+
+     </script>
+</body>
+
+</html>

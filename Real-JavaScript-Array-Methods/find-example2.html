@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>findExample 2</title>
+</head>
+
+<body>
+     <p><input type="number" id="checkAge"></p>
+     <button onclick="myFunction()">Test</button>
+     <p id="demo"></p>
+     
+     <script>
+          const myArr = [20, 10, 30, 40];
+
+          function Tocheck(age) {
+               return age < document.getElementById("checkAge").value;
+          }
+
+          function myFunction() {
+               document.getElementById("demo").innerHTML = myArr.find(Tocheck);
+          }
+     </script>
+</body>
+
+</html>
