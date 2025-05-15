@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Filter</title>
+</head>
+
+<body>
+     <p><input type="number" id="ageCheck" value="30"></p>
+     <button onclick="myFunction()">Test</button>
+     <p id="demo"></p>
+
+     <script>
+          const myAge = [10, 20, 30, 40, 50, 60, 70];
+
+          function ToCheck(age) {
+               return age > document.getElementById("ageCheck").value;
+          }
+
+          function myFunction() {
+               document.getElementById("demo").innerHTML = myAge.filter(ToCheck);
+          }
+     </script>
+</body>
+
+</html>

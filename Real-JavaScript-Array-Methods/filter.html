@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>filter</title>
+</head>
+
+<body>
+     <p>Filter Methods Create New array filled with Elements that Pass a test Provided by a function.</p>
+     <p id="demo"></p>
+
+     <script>
+          let num = [20, 10, 50, 30, 34, 36, 37, 38, 39, 40];
+
+          function checkvalue(value) {
+               return value > 18;
+          }
+
+          document.getElementById("demo").innerHTML = num.filter(checkvalue);
+     </script>
+</body>
+
+</html>
