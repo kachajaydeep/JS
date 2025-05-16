@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>findLastIndex</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const ages = [21, 50, 38, 17];
+
+          function ToCheck(age) {
+               return age > 18;
+          }
+
+          document.getElementById("demo").innerHTML = ages.findLastIndex(ToCheck);
+     </script>
+</body>
+
+</html>
