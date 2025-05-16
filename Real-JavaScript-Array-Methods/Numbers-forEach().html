@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Numbers forEach()</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          let sum = 0;
+          const Numbers = [10, 20, 30, 33, 40, 44, 50, 55];
+          Numbers.forEach(myFunction);
+
+          function myFunction(item) {
+               sum += item;
+          }
+
+          document.getElementById("demo").innerHTML = sum;
+     </script>
+</body>
+
+</html>
