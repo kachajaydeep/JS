@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>toLocalString() In Date</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          var arr2 = [
+               new Date('8 Jan 1998 17:25:00 UTC')];
+          var str = arr2.toLocaleString('en', { timeZone: "UTC" });
+
+          document.getElementById("demo").innerHTML = arr2;
+          document.writeln(typeof arr2 + "<br>")
+          document.writeln(typeof str)
+          // console.log(str);
+
+     </script>
+</body>
+
+</html>
