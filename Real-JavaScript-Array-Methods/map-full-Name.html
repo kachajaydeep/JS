@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>map Full Name</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const fulldetails = [
+               { firstName: "Malcom", lastName: "Reynolds" },
+               { firstName: "Kaylee", lastName: "Frye" },
+               { firstName: "Jayne", lastName: "Cobb" }
+          ];
+
+          document.getElementById("demo").innerHTML = fulldetails.map(myFunction);
+
+          function myFunction(item) {
+               return [item.firstName, item.lastName].join(" ");
+          }
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>map Multiply in Function</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const num = [2, 3, 4, 6, 8, 10, 12, 14];
+
+          function myFunction(argument) {
+               return argument * 10;
+          }
+
+          document.getElementById("demo").innerHTML = num.map(myFunction);
+
+     </script>
+</body>
+
+</html>
