@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Map()</title>
+</head>
+
+<body>
+     <p>map() function Creates a new array for calling a function for every array Element.</p>
+     <p>map() does not execute the function for empty elements.</p>
+     <p>map() does not chenge the Original Array.</p>
+     <p id="demo"></p>
+
+     <script>
+          const Numbers = [4, 16, 64, 225, 625, 121];
+
+          document.getElementById("demo").innerHTML = Numbers.map(Math.sqrt);
+     </script>
+</body>
+
+</html>
