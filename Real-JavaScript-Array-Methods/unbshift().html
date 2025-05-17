@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>unshift</title>
+</head>
+
+<body>
+     <p>The unshift() method adds new elements to beginning of an array.</p>
+     <p>The Unshift() method Overwrites the array.</p>
+     <p id="demo"></p>
+
+     <script>
+          const fruits = ["Banana", "Orange", "Apple", "Mango"];
+          fruits.unshift("Graps", "Lemon", "Pineapple");
+
+          let text = "";
+          for (let x of fruits.join(" and ")) {
+               text += x;
+          }
+
+          document.getElementById("demo").innerHTML = text;
+     </script>
+</body>
+
+</html>

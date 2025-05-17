@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Splice</title>
+</head>
+
+<body>
+     <p>The Splice() Methods adds and/or removes array Elements.</p>
+     <p>Splice Methods Overwrites the Original array.</p>
+     <p id="demo"></p>
+
+     <script>
+          const fruits = ["Banana", "Orange", "Apple", "Mango"];
+          //splice(start, deleteCount)
+          fruits.splice(2, 1);
+
+          document.getElementById("demo").innerHTML = fruits;
+     </script>
+</body>
+
+</html>
