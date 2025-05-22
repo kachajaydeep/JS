@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Type Error</title>
+</head>
+
+<body>
+     <p>The TypeError is Thrown if an Operand or argument is incompleted with the type excepted by an operator.</p>
+     <p id="demo"></p>
+
+     <script>
+
+          let num = 1;
+
+          try {
+               num.toUpperCase();
+          }
+          catch (err) {
+               document.getElementById("demo").innerHTML = err.name;
+          }
+     </script>
+</body>
+
+</html>
