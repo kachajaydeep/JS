@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Reference Error</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          let x = 5;
+
+          try {
+               x = y + 5;
+          }
+          catch (err) {
+               document.getElementById("demo").innerHTML = err.name;
+          }
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>URIError</title>
+</head>
+
+<body>
+     <p>A URIError is thrown if you use illegal character in a URI function.</p>
+     <p id="demo"></p>
+
+     <script>
+          try {
+               decodeURI("%%%");
+          }
+          catch (err) {
+               document.getElementById("demo").innerHTML = err.name;
+          }
+     </script>
+</body>
+
+</html>

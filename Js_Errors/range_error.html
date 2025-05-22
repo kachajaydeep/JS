@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Range Error</title>
+</head>
+
+<body>
+     <p>A RangeError is thrown if you use a number that is outside the range of legal value.</p>
+     <p id="demo"></p>
+     
+     <script>
+          let num = 1;
+          try {
+               num.toPrecision(500);
+          }
+          catch (err) {
+               document.getElementById("demo").innerHTML = err.name;
+          }
+     </script>
+</body>
+
+</html>
