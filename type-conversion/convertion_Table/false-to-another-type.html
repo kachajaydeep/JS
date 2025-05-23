@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>False to Another Type</title>
+</head>
+
+<body>
+     <p id="demo" style="font-family: 'Courier New', Courier, monospace;"></p>
+
+     <script>
+          let x = false;
+          document.getElementById("demo").innerHTML =
+               "Number : " + Number(x) + "<br>" +
+               "Booleans : " + Boolean(x) + "<br>" +
+               "String : " + String(x);
+     </script>
+</body>
+
+</html>
