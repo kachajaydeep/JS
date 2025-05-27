@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Add Different Types of Events</title>
+</head>
+
+<body>
+     <p>This example adds</p>
+     <p id="demo"></p>
+     <script>
+          window.addEventListener("mouseover", mouseOver);
+          window.addEventListener("mouseout", mouseOut);
+          window.addEventListener("click", click);
+
+          function mouseOver() {
+               document.getElementById("demo").innerHTML += " Mouse Over! ";
+          }
+          function mouseOut() {
+               document.getElementById("demo").innerHTML += " Mouse Out! ";
+          }
+          function click() {
+               document.getElementById("demo").innerHTML += "Clicked!";
+          }
+     </script>
+</body>
+
+</html>

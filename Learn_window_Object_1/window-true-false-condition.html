@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Window True False Condition</title>
+</head>
+
+<body>
+     <input type="button" value="Are You Sure!" onclick="message()">
+
+     <script>
+          function message() {
+               let temp = confirm("Are You Sure!");
+
+               if (temp == true) {
+                    alert("Ok You are Sure!");
+               }
+               else {
+                    alert("You are not Sure!");
+               }
+          }
+     </script>
+</body>
+
+</html>
