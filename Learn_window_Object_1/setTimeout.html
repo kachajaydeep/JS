@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>SetTimeOut()</title>
+</head>
+
+<body>
+     <input type="button" onclick="message()" value="click after 3 second!">
+     <script>
+          function message() {
+               setTimeout(
+                    function () {
+                         alert("This is a Message!");
+                    }, 3000)
+          }
+     </script>
+</body>
+
+</html>
