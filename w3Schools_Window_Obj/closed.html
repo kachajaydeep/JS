@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Closed</title>
+</head>
+
+<body>
+     <p><button onclick="openWin()">Open "myWindow"</button></p>
+     <p><button onclick="clodeWin()">Close "myWindow"</button></p>
+     <p><button onclick="checkWin()">Check "myWindow"</button></p>
+
+     <script>
+          let myWindow;
+
+          function openWin() {
+               myWindow = window.open("", "myWindow", "width=200,height=400");
+          }
+
+          function closeWin() {
+               if (myWindow) {
+                    myWindow.close();
+               }
+          }
+          function checkWin() {
+               let text = "";
+
+               if (!myWindow) {
+                    text = "It has never been opened!";
+               }
+               else {
+                    if (myWindow.closed) {
+                         text = "It is Closed";
+                    }
+                    else {
+                         text = "It is Open";
+                    }
+               }
+               document.getElementById("demo").innerHTML = text;
+          }
+     </script>
+</body>
+
+</html>

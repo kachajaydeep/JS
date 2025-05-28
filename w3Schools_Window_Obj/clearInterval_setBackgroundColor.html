@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>clear Interval setBackgroundColor</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+     <button onclick="stopColor()">Stop Toggling</button>
+     <script>
+          myInterval = setInterval(setColor, 500);
+
+          function setColor() {
+               let x = document.body;
+               x.style.backgroundColor = x.style.backgroundColor == "yellow" ? "pink" : "yellow";
+          }
+
+          function stopColor() {
+               clearInterval(myInterval);
+          }
+     </script>
+</body>
+
+</html>

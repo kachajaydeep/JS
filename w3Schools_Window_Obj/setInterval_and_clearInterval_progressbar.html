@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>setInterval and clearInterval progressbar</title>
+     <style>
+          #myprogress {
+               width: 100%;
+               height: 30px;
+               position: relative;
+               background-color: lightgrey;
+          }
+
+          #myBar {
+               width: 10%;
+               height: 100%;
+               position: absolute;
+               background-color: lightgreen;
+          }
+     </style>
+</head>
+
+<body>
+     <div id="myprogress">
+          <div id="myBar"></div>
+     </div>
+     <br>
+     <button onclick="move()">Click Me</button>
+
+     <script>
+          function move() {
+               const element = document.getElementById("myBar");
+               let width = 0;
+               const id = setInterval(frame, 10);
+
+               function frame() {
+                    if (width == 100) {
+                         clearInterval(id);
+                    }
+                    else {
+                         width++;
+                         element.style.width = width + '%';
+                    }
+               }
+          }
+     </script>
+</body>
+
+</html>
