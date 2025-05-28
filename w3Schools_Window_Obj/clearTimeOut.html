@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>clearTimeOut</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+     <button onclick="myStopFunction()">Stop Executing!</button>
+
+     <script>
+          const myInterval = setTimeout(Greeding, 3000);
+          function Greeding() {
+               document.getElementById("demo").innerHTML = "Hello World!";
+          }
+
+          function myStopFunction() {
+               clearInterval(myInterval);
+          }
+     </script>
+</body>
+
+</html>
