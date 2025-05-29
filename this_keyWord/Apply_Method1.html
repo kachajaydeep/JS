@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Apply Method 1</title>
+</head>
+
+<body>
+     <p>The Call Method takes argument separately.</p>
+     <p>The apply Method takes argument as an array.</p>
+     <p id="demo"></p>
+
+     <script>
+          const Person1 = {
+               fullName: function (city, State) {
+                    return this.firstName + " " + this.lastName + " , " + city + " , " + State;
+               }
+          }
+
+          const Person2 = {
+               firstName: "John",
+               lastName: "Doe"
+          };
+          let x = Person1.fullName.apply(Person2, ["Rajkot", "Gujarat"]);
+
+          document.getElementById("demo").innerHTML = x;
+     </script>
+</body>
+
+</html>

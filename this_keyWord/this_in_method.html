@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>This in Method</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const Person = {
+               firstName: "John",
+               lastName: "Doe",
+               id: 5555,
+               age: 56,
+               fullname: function () {
+                    return this.firstName + " " + this.lastName + " age is a " + this.age + " andw he Works Company and Company Id is a " + this.id;
+               }
+          };
+
+          document.getElementById("demo").innerHTML = Person.fullname();
+     </script>
+</body>
+
+</html>
