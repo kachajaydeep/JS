@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Create JavaScript Object</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const person = {};
+          person.firstName = "Joe";
+          person.lastName = "Doe";
+          person.age = 23;
+          person.eyeColor = "blue";
+
+          document.getElementById("demo").innerHTML = person.firstName + "  " + person.lastName + " is a " + person.age + " Years Old.";
+     </script>
+</body>
+
+</html>
