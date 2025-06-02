@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Globle variable because Undeclare</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          myFunction();
+          document.getElementById("demo").innerHTML = a * a;
+          function myFunction() {
+               a = 4;
+          }
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>New Person()</title>
+</head>
+<body>
+     <p id="demo"></p>
+
+     <script>
+          function Person(first, last, age, eye){
+               this.firstName = first;
+               this.lastName = last;
+               this.age = age;
+               this.eyeColor = eye;
+          };
+
+          const myFather = new Person("Nayanbhai","Kacha", 56, "brown");
+          const myMother = new Person("JagrutiBen","Kacha",46,"black");
+          const myUncle = new Person("AshokBhai","Kacha","Not Living","Brown");
+
+          document.getElementById("demo").innerHTML = 
+          "My Father Name is " + myFather.firstName + ` and My Father age` + myFather.age;
+     </script>
+</body>
+</html>

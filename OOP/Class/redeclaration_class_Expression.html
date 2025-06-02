@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Redeclaration Class Expression</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          // Redeclaration of a class expression
+          var Friends = class {
+               constructor(name, age) {
+                    this.name = name;
+                    this.age = age;
+               }
+          }
+
+          const Object1 = new Friends("Hello", 30);
+          const Object2 = new Friends("World", 50);
+
+          var Friends = class {
+               constructor(name, age) {
+                    this.name = name;
+                    this.age = age;
+               }
+          }
+
+          const Object3 = new Friends("Every", 60);3
+          const Object4 = new Friends("Programming", 56);
+
+          document.getElementById("demo").innerHTML = Object1.name + " " + Object1.age;
+          document.writeln(Object3.name + " " + Object4.age);
+     </script>
+</body>
+
+</html>

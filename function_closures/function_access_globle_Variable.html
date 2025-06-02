@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Function Access Globle Variables</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const number = 6;
+          document.getElementById("demo").innerHTML = myFunction();
+
+          function myFunction() {
+               return number * number;
+          }
+     </script>
+</body>
+
+</html>

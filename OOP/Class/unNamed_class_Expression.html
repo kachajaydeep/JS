@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Class Expression</title>
+</head>
+
+<body>
+     <script>
+          var emp = class {
+               constructor(name, id) {
+                    this.name = name;
+                    this.id = id;
+               };
+          }
+
+          document.writeln(emp.name);
+          document.writeln(emp.id);
+
+
+          // const student = class {
+          //      constructor(name, id) {
+          //           this.name = name;
+          //           this.id = id;
+          //      }
+
+          //      details() {
+          //           document.writeln(this.name + " " + this.id + "<br>")
+          //      }
+          // }
+
+          // let Object1 = new student("John", 639685);
+          // let Object2 = new student("Gambhir", 362514);
+
+          // Object1.details();
+          // Object2.details();
+     </script>
+</body>
+
+</html>
