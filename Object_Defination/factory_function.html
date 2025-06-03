@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Factory Function</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          function createFactory(name, age) {
+               return {
+                    name,
+                    age
+               }
+          }
+
+          const user1 = createFactory("Chankya", 0);
+          const user2 = createFactory("TenaliRama", 23);
+
+          document.getElementById("demo").innerHTML = user1.name + " " + user1.age + "<br>" + user2.name + " " + user2.age; 
+     </script>
+</body>
+
+</html>

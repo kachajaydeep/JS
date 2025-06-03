@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Check InstanceOf</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+
+     <script>
+          function Car(name, model) {
+               this.Name = name;
+               this.Model = model;
+          }
+
+          const bmwCar = new Car("BMW", "X1");
+          const audiCar = new Car("AUDI", "A8");
+
+          document.getElementById("demo").innerHTML = bmwCar instanceof Car;
+          document.getElementById("demo1").innerHTML = bmwCar.Name + " " + bmwCar.Model + "<br> " + audiCar.Name + audiCar.Model;
+     </script>
+</body>
+
+</html>

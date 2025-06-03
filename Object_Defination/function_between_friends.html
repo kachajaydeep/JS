@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Factory Function</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const friendOne = {
+               name: "Meet",
+               talk() {
+                    return (`Hello I am ${this.name}.`);
+               }
+          }
+
+          const friendTwo = {
+               name: "Purshotum",
+               talk() {
+                    return (`Hello I am ${this.name}`);
+               }
+          };
+
+          friendOne.name = "hello";
+          document.getElementById("demo").innerHTML = friendOne.talk() + "<br>" + friendTwo.talk();
+     </script>
+</body>
+
+</html>

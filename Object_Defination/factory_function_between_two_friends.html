@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Factory Function Between Two Friends</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+     <p>This Function is Used to avoid Dublication of an Object, also You can see the changes in the program to probebly
+          idea.</p>
+     <script>
+          function friendFactory(friendName) {
+               return {
+                    friendName: friendName,
+                    talk() {
+                         document.write(`Hello I am ${friendName}`);
+                    }
+               }
+          };
+
+          let friendOne = friendFactory("John");
+          let friendTwo = friendFactory("Cena");
+
+          friendOne.friendName = "rock";
+          friendOne.talk();   
+     </script>
+</body>
+
+</html>

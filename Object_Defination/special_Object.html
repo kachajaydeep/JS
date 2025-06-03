@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Special Object</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const car = {
+               name: "Special",
+               age: 34,
+               "is seniourcityzone": true,
+          };
+
+          document.getElementById("demo").innerHTML = car.name + " " + car["is seniourcityzone"];
+     </script>
+</body>
+
+</html>
