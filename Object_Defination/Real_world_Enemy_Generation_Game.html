@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Real world Enemy Generation Game</title>
+</head>
+
+<body>
+
+     <script>
+          function enemyFactory(type, atteckPower, Enerygy, speed) {
+               return {
+                    type: type,
+                    atteckPower: atteckPower,
+                    Enerygy: Enerygy,
+                    speed: speed,
+
+                    attack() {
+                         document.writeln(`${this.type} attacks with ${this.atteckPower} power! <br> `);
+                    },
+
+                    move() {
+                         document.writeln(`${this.type} moves with ${this.speed} speed!`);
+                    }
+               }
+          }
+
+          let attaker = enemyFactory("Goblin", 50, 10, 5);
+          let defender = enemyFactory("Dragon", 100, 20, 10);
+
+          attaker.attack();
+          defender.move();
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Optimizing Factory Function</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          function friendFactory(friendName) {
+               return {
+                    name: friendName,
+               }
+          };
+
+          let friendDetails = {
+               talk() {
+                    return (`Hello I am ${this.name}`);
+               },
+          }
+
+          let friendOne = friendFactory("Briden");
+          let friendTwo = friendFactory("Eich");
+
+          friendOne.talk = friendDetails.talk;
+          friendTwo.talk = friendDetails.talk;
+
+          document.write(friendOne.talk() + "<br>"); 
+          document.write(friendTwo.talk());
+     </script>
+</body>
+
+</html>

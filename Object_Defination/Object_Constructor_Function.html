@@ -11,14 +11,14 @@
      <p id="demo"></p>
 
      <script>
-          function person(first, last, age, eye) {
+          function Person(first, last, age, eye) {
                this.firstName = first;
                this.lastName = last;
                this.age = age;
                this.eyeColor = eye;
           }
 
-          const myFriend = new person("Joe", "Doe", 23, "Blue");
+          const myFriend = new Person("Joe", "Doe", 23, "Blue");
           document.getElementById("demo").innerHTML = myFriend.firstName + " " + myFriend.lastName;
      </script>
 </body>
