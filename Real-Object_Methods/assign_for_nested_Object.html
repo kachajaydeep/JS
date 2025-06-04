@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>assign for nested Object Reference</title>
+</head>
+
+<body>
+     <p>Shallow Copy are also change the Source and target Object.</p>
+     <script>
+          const obj1 = {
+               a: 1, b: 2,
+               c: {
+                    d: 3, e: 4,
+               }
+          }
+
+          const obj2 = Object.assign({}, obj1);
+          obj2.c.d = 100;
+
+          console.log("Change in Nested Object");
+
+          console.log(obj1.c.d);
+          console.log(obj2.c.d); //Created new reference and assign same reference Source to target.
+
+          obj2.a = 200;
+
+          console.log("Change in Only Object");
+          console.log(obj1.a);
+          console.log(obj2.a); //Created new reference and assign it.
+     </script>
+</body>
+
+</html>

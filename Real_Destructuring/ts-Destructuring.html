@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Destructuring</title>
+</head>
+
+<body>
+
+     <script>
+          // Destructuring
+          const Student = {
+               'name': ' John Williamson ',
+               'age': 9,
+               'std': 3,
+               'subject': ["Maths", "English", "EVS"],
+               'Parents': {
+                    'father': 'Brown Williamson',
+                    'Mother': 'Sophia',
+                    'email': 'John-parents@gmail.com',
+               },
+               'address': {
+                    'street': '123, Main Street',
+                    'city': 'Cartertoon',
+                    'Country': 'New Zealend',
+                    'zip': 5791
+               }
+          }
+
+          const { name, age, meal = "bread" } = Student; //Destructuring Means Stored Object in a Single Variable.
+          document.writeln(age, name, meal);
+     </script>
+</body>
+
+</html>,

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Alice Name Destructuring</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const Student = {
+               'name': ' John Williamson ',
+               'age': 9,
+               'std': 3,
+               'subject': ["Maths", "English", "EVS"],
+               'Parents': {
+                    'father': 'Brown Williamson',
+                    'Mother': 'Sophia',
+                    'email': 'John-parents@gmail.com',
+               },
+               'address': {
+                    'street': '123, Main Street',
+                    'city': 'Cartertoon',
+                    'Country': 'New Zealend',
+                    'zip': 5791
+               }
+          }
+
+          const { age: Ages } = Student; // Ages is a Alice and is treate as a variable name.
+
+          document.write(Ages);
+     </script>
+</body>
+
+</html>

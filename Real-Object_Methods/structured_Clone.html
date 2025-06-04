@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Structured Clone</title>
+</head>
+
+<body>
+     <p>Deep Copyb doesn't change the Source Object.</p>
+     <script>
+          const obj1 = {
+               a: 1,
+               b: 2,
+               c: {
+                    d: 3,
+                    e: 4,
+               }
+          };
+
+          const obj2 = structuredClone(obj1);
+          console.log(obj2);
+
+          obj2.c.d = 300;
+
+          console.log(obj1.c.d);
+          console.log(obj2.c.d);
+
+
+     </script>
+</body>
+
+</html>

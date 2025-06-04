@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Nested Object</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          let Profile = {
+               name: "kj",
+               age: 25,
+               eyeColor: "Brown",
+               message: function () {
+                    document.write(this.name);
+               },
+               address: {
+                    City: "Rajkot",
+                    State: "Gujarat",
+                    Street: "Near New Telephone Exchange, Behind the garden, ",
+                    greeding: function () {
+                         document.write("Welcome TO Gujarat...");
+                    }
+               },
+               salary: 25000,
+          }
+          Profile.address.greeding();
+          document.writeln("<br>" + Profile.address.Street + Profile.address.City + " , " + Profile.address.State + "<br>");
+
+          if (Profile.salary == undefined && Profile.salary == null && !Profile.salary) {
+               document.write("The Salary is Doesn't exist");
+          }
+          else {
+               document.write("The Salary was exist");
+          }
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Array Destructuring</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const students = [
+               {
+                    'name': 'William ',
+                    'grade': 'A'
+               },
+               {
+                    'name': 'Tom ',
+                    'grade': 'A+'
+               },
+               {
+                    'name': 'Bob ',
+                    'grade': 'B'
+               }
+          ]
+
+          for (let { name, grade } of students) {
+               document.writeln(name, grade);
+          }
+     </script>
+</body>
+
+</html>
