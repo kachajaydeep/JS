@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Arrow Function Destructuring</title>
+</head>
+
+<body>
+
+     <script>
+          const getStudents = () => {
+               return {
+                    'name': 'John Williamson',
+                    'age': 9,
+                    'std': 3,
+                    'subject': ['Maths', 'English', 'EVS'],
+                    'parents': {
+                         'father': 'John',
+                         'mother': 'Sophia',
+                         'email': 'john-parents@abcdef.com',
+                    },
+                    'address': {
+                         'street': '123, Main Street',
+                         'city': 'Cartertoon',
+                         'Country': 'New Zealend',
+                         'zip': 5791,
+                    }
+               }
+          }
+
+          const { name: anotherName, std: anotherStandard } = getStudents()
+          document.write(anotherName + " " + anotherStandard);
+     </script>
+</body>
+
+</html>

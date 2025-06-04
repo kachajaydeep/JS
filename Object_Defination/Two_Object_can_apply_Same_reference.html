@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Two Object can apply Same reference</title>
+</head>
+
+<body>
+
+     <script>
+          let obj1 = { name: 'John', age: 30 };
+          let obj2 = { name: 'John', age: 30 };
+
+          document.writeln(obj1 == obj2);
+          document.writeln(obj1 === obj2);
+
+
+          obj1 = obj2;
+
+          document.writeln(obj1 == obj2);
+          document.writeln(obj1 === obj2);
+     </script>
+</body>
+
+</html>
