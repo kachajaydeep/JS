@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Implicit Binding</title>
+</head>
+
+<body>
+     <p>
+          Implicit Binding is applied when you invoke a function in an Object using the dot notation. this in such
+          scenarios will point to the Object using which the function was invoked. Or simply the Object on the left side
+          of the dot.
+     </p>
+     <script>
+          function myFunction() {
+               console.log(this);
+          };
+
+          const obj = {
+               somekey: 1,
+               myFunction: myFunction,
+          }
+
+          obj.myFunction();
+     </script>
+</body>
+
+</html>

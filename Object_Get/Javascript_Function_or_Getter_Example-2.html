@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Javascript Function or Getter Example 2</title>
+</head>
+
+<body>
+     <p>In Example Javascript_Function_or_Getter the return a function but here ?</p>
+     <p id="demo"></p>
+     <script>
+          const person = {
+               name: 'John',
+               age: 30,
+               get fullName() {
+                    return this.name + ' ' + this.age;
+               }
+          }
+
+          document.getElementById("demo").innerHTML = person.fullName;
+     </script>
+</body>
+
+</html>
