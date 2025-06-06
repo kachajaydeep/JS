@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Use Inside Nested Function</title>
+</head>
+<body>
+     <script>
+          "use strict";
+          function outer() {
+               function inner() {
+                    console.log("This is an function");
+               }
+               outer();
+          }
+
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Object As Argument</title>
+</head>
+
+<body>
+     <script>
+          const Tom = {
+               name: "Tom",
+               age: 7,
+          };
+
+          const cherry = {
+               name: "Cherry",
+               age: 3,
+          }
+
+          function greedMe(obj) {
+               obj.logMessage = function () {
+                    console.log(this.name + " " + this.age);
+               }
+
+               console.log(obj);
+          }
+
+          greedMe(Tom);
+          Tom.logMessage();
+
+          greedMe(cherry);
+          cherry.logMessage();
+     </script>
+</body>
+
+</html>
