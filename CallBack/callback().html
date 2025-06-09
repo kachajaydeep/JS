@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Callback</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          console.log("hello");
+
+          function one() {
+               console.log("Step 1 is Completed! Now ");
+          }
+
+          function two(call_back) {
+               console.log("Step 2");
+               call_back();
+          }
+
+          two(one);
+     </script>
+</body>
+
+</html>

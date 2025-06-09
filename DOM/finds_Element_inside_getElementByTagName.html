@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Finds Element inside getElementByTagName</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+     <div id="main">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, vel?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vel veritatis neque enim dignissimos dolor nisi
+               magnam odit officiis temporibus.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vel veritatis neque enim dignissimos dolor nisi
+               magnam odit officiis temporibus.</p>
+     </div>
+
+     <script>
+          const x = document.getElementById("main")
+          const y = x.getElementsByTagName("p");
+
+          document.getElementById("demo").innerHTML =
+               `The first Paragraph (index 0) inside main is: ` + y[0].innerHTML;
+     </script>
+</body>
+
+</html>
