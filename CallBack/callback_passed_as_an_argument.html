@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Callback Passed As An Argument</title>
+</head>
+
+<body>
+     <p id="demo"></p>
+
+     <script>
+          function myDisplayer(some) {
+               document.getElementById("demo").innerHTML = "The CallBack Function Passed as an argument like : " + some;
+          }
+          function myCalculator(num1, num2, myCallback) {
+               let result = num1 + num2;
+               myCallback(result);
+          }
+
+          myCalculator(5, 5, myDisplayer);
+     </script>
+</body>
+
+</html>
