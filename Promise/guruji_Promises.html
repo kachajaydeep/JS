@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Promises</title>
+</head>
+<body>
+     <p id="demo"></p>
+
+     <script>
+          const promiseOne = new Promise(function(resolve, reject){
+               setTimeout(function(){
+                    console.log("Async Task is Completed.");
+                    resolve();
+               },1000)
+          })
+
+          promiseOne.then(function() {
+               console.log("Promise Consumed");
+          })
+     </script>
+</body>
+</html>
