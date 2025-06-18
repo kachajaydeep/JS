@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Waiting for TimeOut</title>
+</head>
+
+<body>
+     <h1>JavaScript Functions.</h1>
+     <h2>setTimeOut() with Callback.</h2>
+     <p>Wait 3 Seconds (3000 milliSeconds.) for this Page to change.</p>
+     <h1 id="demo"></h1>
+
+     <script>
+          setTimeout(function () { myFunction("I Love JAVASCRIPT!!!"); }, 4000);
+
+          function myFunction(value) {
+               document.getElementById("demo").innerHTML = value;
+          }
+     </script>
+</body>
+
+</html>

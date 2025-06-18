@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>then Catch Methods</title>
+</head>
+
+<body>
+     <script>
+          const myPromise = new Promise((resolve, reject) => {
+               const random = Math.random();
+               if (random < 0.5) {
+                    resolve("Random Number is Successfully Arrived");
+               }
+               else {
+                    reject("Random Number is Not to Arrived");
+               }
+          });
+
+          myPromise
+               .then((data) => {
+                    document.writeln(data);
+               })
+               .catch((error) => {
+                    document.writeln(error);
+
+               }) 
+     </script>
+</body>
+
+</html>
