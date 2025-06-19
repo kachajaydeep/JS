@@ -8,26 +8,29 @@
 </head>
 
 <body>
+     <h1>Promise.then() takes two arguments, a callback for success and another for failure.</h1>
      <p id="demo"></p>
 
      <script>
-          function myDisplayer(some){
-               document.getElementById("demo").innerHTML = some;
-          }
-          let myPromise = new Promise(function (myResolve, myReject) {
+
+          const myPromise = new Promise(function (myResolve, myReject) {
                let x = 0;
 
                if (x == 0) {
-                    myResolve("Ok");
+                    myResolve("The Output is Occured!");
                }
                else {
-                    myReject("Not Ok");
+                    myReject("The Output is Not Occured!");
                }
           });
 
           myPromise.then(
-               function (value) { myDisplayer(value); },
-               function (error) { myDisplayer(error); }
+               function (value) {
+                    document.getElementById("demo").innerHTML = value;
+               },
+               function (error) {
+                    document.getElementById("demo").innerHTML = error;
+               }
           )
      </script>
 </body>
