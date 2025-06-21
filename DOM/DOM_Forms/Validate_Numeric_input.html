@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Validate Numeric input</title>
+</head>
+
+<body>
+     <input id="numb" type="number">
+
+     <button type="button" onclick="myFunction()">Submit</button>
+
+     <h1 id="demo"></h1>
+     <script>
+          function myFunction() {
+               let x = document.getElementById("numb").value;
+
+               let text = "";
+               if (isNaN(x) || x < 1 || x > 10) {
+                    text = "Input is not Valid!";
+               }
+               else {
+                    text = "Input is Valid!";
+               }
+               document.getElementById("demo").innerHTML = text;
+          }
+     </script>
+</body>
+
+</html>
