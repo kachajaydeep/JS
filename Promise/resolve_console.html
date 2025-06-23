@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>resolve console</title>
 </head>
+
 <body>
-     
+     <p>Promise has Three States</p>
+     <p><b>Pending : </b>Initial State neighther fullfill or reject.</p>
+     <p><b>Fullfilled : </b>meaning that an operation was Completed Successfully.</p>
+     <p><b>Reject : </b>meaning that an operation Failed.</p>
      <script>
-          const myPromise = new Promise((resolve,reject) =>{
+          const myPromise = new Promise((resolve, reject) => {
                setTimeout(() => {
                     resolve("Hello from the Promise!");
-               },2000);
+               }, 2000);
           });
      </script>
 </body>
+
 </html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Fetch Promise</title>
+</head>
+<body>
+     <script>
+          fetch('https://example.com/data')
+          .then(response => response.json())
+          .then(processedData => {
+               //do something with the Processed data
+          })
+          .catch(error => console.log(error))
+     </script>
+</body>
+</html>
