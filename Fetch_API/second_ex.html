@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Second Example</title>
+</head>
+
+<body>
+     <p id="demo">Fetch a File to change this text</p>
+
+     <script>
+          getText("../Array-sort/compare-function.html");
+          async function getText(file) {
+               let myObject = await fetch(file);
+               let text = await myObject.text();
+               document.getElementById("demo").innerHTML = text;
+          }
+     </script>
+</body>
+
+</html>

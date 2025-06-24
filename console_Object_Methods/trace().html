@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Trace()</title>
+</head>
+<body>
+     <p>The trace Method Displays trace that show how the code ended up at a certain point.</p>
+     <button onclick="myFunction()">Start Trace</button>
+
+     <script>
+          function myFunction(){
+               myOtherFunction()
+          }
+          function myOtherFunction(){
+               console.trace();
+          }
+     </script>
+</body>
+</html>

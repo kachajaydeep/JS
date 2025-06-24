@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Basics Of Fetch API</title>
+</head>
+
+<body>
+     <p id="demo">Fetch a file to change this text.</p>
+
+     <script>
+          let file = "../adding-interativity/basic.html";
+          fetch(file)
+               .then(x => x.text())
+               .then(y => document.getElementById("demo").innerHTML = y);
+     </script>
+</body>
+
+</html>
