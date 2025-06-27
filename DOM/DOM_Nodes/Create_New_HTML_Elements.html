@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Creating New HTML Element Using DOM</title>
+</head>
+<body>
+     <div id="myDiv">
+          <p>paragraph 1</p>
+          <p>paragraph 2</p>
+     </div>
+
+     <script>
+          const para = document.createElement("p");
+          const node = document.createTextNode("This is New");
+          para.appendChild(node);
+          const Element = document.getElementById("myDiv");
+          Element.appendChild(para);   
+     </script>
+</body>
+</html>

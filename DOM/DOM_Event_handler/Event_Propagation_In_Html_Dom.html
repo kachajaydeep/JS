@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Event Propagation In Html Dom</title>
+     <style>
+          #myDiv1,
+          #myDiv2 {
+               background-color: coral;
+               padding: 50px;
+          }
+
+          #myP1,
+          #myP2 {
+               padding: 20px;
+               font-size: 20px;
+               background-color: white;
+               border: 1px solid black;
+          }
+     </style>
+</head>
+
+<body>
+     <h1>Propagation: <p>Event Propagation is way of Defining the element order when an event occurs.there are two types
+               which one is a (1)bubble and (2)Capturing.</p>
+     </h1>
+
+     <p><b>Bubbling:</b>In Bubbling the Inner Most Element's Event is handled first and then the outer.</p>
+     <p><b>Capturing:</b>In Capturing the Outer Most Element's Event is handled first and then after inner.</p>
+     <p>The default value is a <b>false</b>, which will use the Bubbling Propagation, when the value is set to
+          <b>true</b>, the event uses the capturing propagation
+     </p>
+
+
+     <div id="myDiv1">
+          <p id="myP1">Click Me!</p>
+     </div><br>
+
+     <div id="myDiv2">
+          <p id="myP2">Click Me!</p>
+     </div>
+
+
+     <script>
+          document.getElementById("myP1").addEventListener("click", function () {
+               alert("White box is show!");
+          }, false);
+
+          document.getElementById("myDiv1").addEventListener("click", function () {
+               alert("You will Show the Orange Box")
+          }, false);
+
+          document.getElementById("myP2").addEventListener("click", function () {
+               alert("You will Show the White Box");
+          }, true);
+
+          document.getElementById("myDiv2").addEventListener("click", function () {
+               alert("You will Show the Orange Box");
+          },true);
+     </script>
+</body>
+
+</html>

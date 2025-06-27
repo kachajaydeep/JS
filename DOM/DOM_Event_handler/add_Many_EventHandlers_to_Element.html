@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Add Many EventHandlers to Element</title>
+</head>
+
+<body>
+     <p>This Example uses the addEventListener() method to add two click events to the same button</p>
+     <button id="myBtn">Try It</button>
+     <script>
+          let x = document.getElementById("myBtn");
+          x.addEventListener("click", myFunction);
+          x.addEventListener("click", displayText);
+
+          function myFunction() {
+               alert("Hello, World");
+          }
+          function displayText() {
+               alert("This is a Second Function click!");
+          }
+     </script>
+</body>
+
+</html>

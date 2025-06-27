@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>addEventListner()</title>
+</head>
+
+<body>
+     <p>The addEventListener() method attaches an event handler to specified element.</p>
+     <p>the addEventListener() method attaches an Element to Without overWritting Existing event handlers.</p>
+     <button id="myBtn">Try It</button>
+     <p id="demo"></p>
+
+     <script>
+          document.getElementById("myBtn").addEventListener("click", displayText)
+          function displayText() {
+               document.getElementById("demo").innerHTML = Date();
+          }
+     </script>
+</body>
+
+</html>

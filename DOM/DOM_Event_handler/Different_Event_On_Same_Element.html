@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Different Event On Same Element</title>
+</head>
+<body>
+     <button id="myBtn">try Different Events</button>
+
+     <p id="demo"></p>
+
+     <script>
+          let x = document.getElementById("myBtn");
+          x.addEventListener("click",mySecondFunction);
+          x.addEventListener("mouseover",myFuncion);
+          x.addEventListener("mouseout",myOutFunction);
+
+          function myFuncion(){
+               document.getElementById("demo").innerHTML += "Moused Over! <br>";
+          }
+          function mySecondFunction(){
+               document.getElementById("demo").innerHTML += "Clicked! <br>";
+          }
+          function myOutFunction(){
+               document.getElementById("demo").innerHTML += "Mouse Out to the Text! <br>";
+          }
+     </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Replacing Element In DOM</title>
+</head>
+<body>
+     <div id="myDiv1">
+          <p id="p1">Paragaph 1</p>
+          <p id="p2">Paragraph 2</p>
+     </div>
+     
+     <script>
+          const Paragraph = document.createElement('p');
+          const node = document.createTextNode("Hello I am Creating The Element.");
+          Paragraph.appendChild(node);
+
+          const element = document.getElementById("myDiv1");
+          const Child = document.getElementById("p2");
+          element.replaceChild(Paragraph, Child);
+     </script>
+</body>
+</html>
