@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Add EventHandler To Window Object</title>
+</head>
+<body>
+     <p>Try Resizing this browser window to trigger the "resize" event handler.</p>
+     <p id="demo"></p>
+
+     <script>
+          window.addEventListener("resize", function(){
+               document.getElementById("demo").innerHTML = Math.random();
+          })
+     </script>
+</body>
+</html>
