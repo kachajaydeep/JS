@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>loop throught nodeList</title>
+</head>
+
+<body>
+     <h2>HTML DOM</h2>
+     <p>Paragraph 1</p>
+     <p>Paragraph 2</p>
+     <button onclick="myFunction()">Try Now!</button>
+     <script>
+          function myFunction() {
+               const Element = document.querySelectorAll("p");
+
+               for (let i = 0; i < Element.length; i++) {
+                    Element[1].style.color = "pink"
+               }
+          }
+     </script>
+</body>
+
+</html>
