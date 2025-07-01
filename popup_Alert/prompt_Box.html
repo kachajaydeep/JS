@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Prompt Box</title>
+</head>
+<body>
+     <button onclick="myFunction()">try It</button>
+     <p id="demo"></p>
+
+     <script>
+          function myFunction(){
+               let person = prompt("Please Enter Your Name : ","Pokemon");
+               let text;
+               if(person == null || person == ""){
+                    text = "User cancelled the Prompt";
+               }
+               else{
+                    text = "Hello " + person + " !";
+               }
+               document.getElementById("demo").innerHTML = text;
+          }
+     </script>
+</body>
+</html>

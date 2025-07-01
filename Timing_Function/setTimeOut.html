@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Browser Cookies</title>
+     <title>Document</title>
 </head>
+
 <body>
-     <p id="demo"></p>
+     <button onclick="setTimeout(myFunction,3000)">Try Now</button>
 
      <script>
-          document.getElementById("demo").innerHTML = 
-          "navigator.cookiesEanbled is " + navigator.cookieEnabled;
+          function myFunction() {
+               alert("Hello World");
+          }
      </script>
 </body>
+
 </html>
