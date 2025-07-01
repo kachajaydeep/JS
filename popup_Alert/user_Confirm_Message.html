@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>user_Confirm_Message</title>
+</head>
+<body>
+     <button onclick="myFunc()">Your Conformation</button>
+     <p id="demo"></p>
+     <script>
+          function myFunc(){
+               let txt;
+               if(confirm("pass a value")){
+                    txt = "You press ok!";
+               }
+               else{
+                    txt = "You press cancel!";
+               }
+               document.getElementById("demo").innerText = txt;
+          }
+     </script>
+</body>
+</html>
