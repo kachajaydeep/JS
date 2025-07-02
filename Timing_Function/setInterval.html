@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>setTimeInterval</title>
+     <style>
+           #demo{
+               font-size: 50px;
+               text-align: center;
+           }
+     </style>
+</head>
+<body>
+     <p>setTimeInterval() Methods Repeats a given Function at every given Time-Interval.</p>
+     <p id="demo"></p>
+
+     <script>
+          setInterval(myFunction,1000);
+
+          function myFunction() {
+               const d = new Date();
+               document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+          }
+     </script>
+</body>
+</html>

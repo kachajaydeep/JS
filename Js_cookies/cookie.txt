@@ -1,0 +1,29 @@
+Cookies are Data,stored in small text files, on your Computer.
+When The Web server Send Web page to the Web Browser,the Connection is shutDown The User forget everything about the user.
+Cookies were Invented to solve the problem,"how to remmeber information about the user:
+	-When User visit WebPage his/her name can be stored in a cookie.
+	-Next Time User visit WebPage The cookie remember his/her name.
+
+
+=>  codes :
+   Create cookie:
+
+   document.cookie = "username= John Doe";
+
+=> You can also add expiry Date in The cookie By Default, the cookie is deleted when the Browser Closed.
+       document.cookie = "username=John Doe; expires = Tue, 18 Dec 2025 12:00:00 UTC.";
+
+With a path parameter, you can tell the Browser what path the cookie belongs to.By Default cookie belongs to current page.
+       => document.cokkie = "username = John; expires = Tue, 18 Dec 2025 12:00:00 UTC. path = / ";
+
+Delete a Cookie with JavaScript
+
+Deleting a cookie you don't have to specify a cookie value when you delete a cookie.
+          => "Just set the expires parameter to a past Date."
+
+Note : Some browser will not let you delete a cookie if you don't specify the path.
+
+If you set a new cookie, older cookies are not overwriten. The new cookie is added to document.cookie, so if you read document.cookie again
+
+
+
